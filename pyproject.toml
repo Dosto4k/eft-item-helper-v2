@@ -1,0 +1,26 @@
+[project]
+name = "eft-item-helper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=6.0.6",
+]
+
+[dependency-groups]
+dev = [
+    "django-debug-toolbar>=6.3.0",
+    "django-extensions>=4.1",
+    "ipython>=9.14.1",
+    "pre-commit>=4.6.0",
+    "python-dotenv>=1.2.2",
+]
+
+[tool.ruff.lint]
+select = [
+    "ANN","FAST","ASYNC","B","A",
+    "EXE","ISC","T20","Q","RET",
+    "SIM","TID","ARG","C90","N",
+    "E","W","F","S",
+]
