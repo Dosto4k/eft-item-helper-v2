@@ -67,5 +67,9 @@ class UserItem(models.Model):
         verbose_name="Не в рейде для квестов", default=0
     )
 
+    class Meta:
+        verbose_name = "Собранные предметы пользователя"
+        verbose_name_plural = "Собранные предметы пользователей"
+
     def __str__(self) -> str:
         return f"{self.user}: {self.item}"
