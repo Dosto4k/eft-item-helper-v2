@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_extensions",
     "users.apps.UsersConfig",
+    "item_counter.apps.ItemCounterConfig",
 ]
 
 MIDDLEWARE = [
