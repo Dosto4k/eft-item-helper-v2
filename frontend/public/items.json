@@ -1,0 +1,4006 @@
+[
+  {
+    "name": "Помповое ружье MP-133 12к",
+    "count": 3,
+    "in_raid": 0,
+    "not_in_raid": 3,
+    "quests": [
+      {
+        "name": "Проба пера",
+        "guide": "https://tarkov.help/ru/quest/proba-pera"
+      },
+      {
+        "name": "Оружейник. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Магазин 6Л31 на 60 патронов 5.45x39 для АК-74",
+    "count": 5,
+    "in_raid": 3,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Рожки для мороженого",
+        "guide": "https://tarkov.help/ru/quest/rozhki-dlya-morozhenogo"
+      },
+      {
+        "name": "Оружейник. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-2"
+      },
+      {
+        "name": "Оружейник. Часть 10",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-10"
+      }
+    ]
+  },
+  {
+    "name": "Военный аккумулятор 6-СТЭН-140-М",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Поставщик",
+        "guide": "https://tarkov.help/ru/quest/postavshhik"
+      },
+      {
+        "name": "Поменять батарейку",
+        "guide": "https://tarkov.help/ru/quest/pomenyat-batareiku"
+      }
+    ]
+  },
+  {
+    "name": "Снаряд ОФЗ 30x165мм",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Поставщик",
+        "guide": "https://tarkov.help/ru/quest/postavshhik"
+      }
+    ]
+  },
+  {
+    "name": "Нижняя полумаска",
+    "count": 7,
+    "in_raid": 7,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Каратель. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Нож Барс А-2607 95Х18",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Каратель. Часть 4",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-4"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АК-74Н 5.45x39",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Каратель. Часть 5",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-5"
+      }
+    ]
+  },
+  {
+    "name": "Штурмовая винтовка Colt M4A1 5.56x45",
+    "count": 3,
+    "in_raid": 1,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Каратель. Часть 5",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-5"
+      },
+      {
+        "name": "Оружейник. Часть 7",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-7"
+      },
+      {
+        "name": "Оружейник. Часть 22",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-22"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет Макарова ПМ 9x18ПМ",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Каратель. Часть 5",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-5"
+      }
+    ]
+  },
+  {
+    "name": "Армейский жетон BEAR",
+    "count": 47,
+    "in_raid": 47,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Каратель. Часть 6",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-6"
+      },
+      {
+        "name": "Трофеи",
+        "guide": "https://tarkov.help/ru/quest/trofei"
+      },
+      {
+        "name": "Противостояние",
+        "guide": "https://tarkov.help/ru/quest/protivostoyanie"
+      }
+    ]
+  },
+  {
+    "name": "Армейский жетон USEC",
+    "count": 54,
+    "in_raid": 47,
+    "not_in_raid": 7,
+    "quests": [
+      {
+        "name": "Каратель. Часть 6",
+        "guide": "https://tarkov.help/ru/quest/karatel-chast-6"
+      },
+      {
+        "name": "Своя Земля",
+        "guide": "https://tarkov.help/ru/quest/svoya-zemlya"
+      },
+      {
+        "name": "Друг с запада. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/drug-s-zapada-chast-1"
+      },
+      {
+        "name": "Трофеи",
+        "guide": "https://tarkov.help/ru/quest/trofei"
+      }
+    ]
+  },
+  {
+    "name": "Ручная граната M67",
+    "count": 10,
+    "in_raid": 0,
+    "not_in_raid": 10,
+    "quests": [
+      {
+        "name": "Без обид",
+        "guide": "https://tarkov.help/ru/quest/bez-obid"
+      }
+    ]
+  },
+  {
+    "name": "Ледоруб Red Rebel",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Спецзаказ",
+        "guide": "https://tarkov.help/ru/quest/spezzakaz"
+      }
+    ]
+  },
+  {
+    "name": "Аптечка Salewa First Aid Kit",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Дефицит",
+        "guide": "https://tarkov.help/ru/quest/deficzit"
+      }
+    ]
+  },
+  {
+    "name": "Газоанализатор",
+    "count": 7,
+    "in_raid": 7,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Санэпиднадзор. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/sanepidnadzor-chast-1"
+      },
+      {
+        "name": "Санэпиднадзор. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/sanepidnadzor-chast-2"
+      },
+      {
+        "name": "Сетевой провайдер - Часть 1",
+        "guide": "https://tarkov.help/ru/quest/setevoy-provider-1"
+      }
+    ]
+  },
+  {
+    "name": "Шприц с морфием",
+    "count": 8,
+    "in_raid": 8,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Пейнкиллер",
+        "guide": "https://tarkov.help/ru/quest/pejnkiller"
+      },
+      {
+        "name": "Путевка в санаторий. Часть 7",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-7"
+      }
+    ]
+  },
+  {
+    "name": "Автомобильный аккумулятор",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Авторем",
+        "guide": "https://tarkov.help/ru/quest/avtorem"
+      }
+    ]
+  },
+  {
+    "name": "Свеча зажигания",
+    "count": 8,
+    "in_raid": 8,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Авторем",
+        "guide": "https://tarkov.help/ru/quest/avtorem"
+      }
+    ]
+  },
+  {
+    "name": "Банка тушеной говядины (Маленькая)",
+    "count": 15,
+    "in_raid": 15,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Сельпо",
+        "guide": "https://tarkov.help/ru/quest/selpo"
+      }
+    ]
+  },
+  {
+    "name": "Офтальмоскоп",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Частная клиника",
+        "guide": "https://tarkov.help/ru/quest/chastnaya-klinika"
+      },
+      {
+        "name": "Доктор «Айболит»",
+        "guide": "https://tarkov.help/ru/quest/doktor-ajbolit"
+      }
+    ]
+  },
+  {
+    "name": "Светодиодный трансиллюминатор кожи LEDX",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Частная клиника",
+        "guide": "https://tarkov.help/ru/quest/chastnaya-klinika"
+      },
+      {
+        "name": "Доктор «Айболит»",
+        "guide": "https://tarkov.help/ru/quest/doktor-ajbolit"
+      }
+    ]
+  },
+  {
+    "name": "Ключ-карта доступа в TerraGroup Labs",
+    "count": 12,
+    "in_raid": 12,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллеги. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/kollegi-chast-3"
+      },
+      {
+        "name": "Рыбное место",
+        "guide": "https://tarkov.help/ru/quest/rybnoe-mesto"
+      }
+    ]
+  },
+  {
+    "name": "Препарат AHF1-M",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллеги. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/kollegi-chast-3"
+      },
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "Препарат 3-(b-TG)",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллеги. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/kollegi-chast-3"
+      },
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "Портативный дефибриллятор",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Доктор «Айболит»",
+        "guide": "https://tarkov.help/ru/quest/doktor-ajbolit"
+      },
+      {
+        "name": "Скорая помощь",
+        "guide": "https://tarkov.help/ru/quest/skoraya-pomoshh"
+      }
+    ]
+  },
+  {
+    "name": "Набор медикаментов",
+    "count": 20,
+    "in_raid": 20,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Доктор «Айболит»",
+        "guide": "https://tarkov.help/ru/quest/doktor-ajbolit"
+      }
+    ]
+  },
+  {
+    "name": "Банка с витаминами OLOLO",
+    "count": 14,
+    "in_raid": 14,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Доктор «Айболит»",
+        "guide": "https://tarkov.help/ru/quest/doktor-ajbolit"
+      },
+      {
+        "name": "Водохлёб. Секреты",
+        "guide": "https://tarkov.help/ru/quest/vodohleb-sekrety"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от комнаты 303 общежития",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Забудем старые обиды",
+        "guide": "https://tarkov.help/ru/quest/zabudem-starye-obidy"
+      }
+    ]
+  },
+  {
+    "name": "Ключ ЗБ-014",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Забудем старые обиды",
+        "guide": "https://tarkov.help/ru/quest/zabudem-starye-obidy"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от военного КПП",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Забудем старые обиды",
+        "guide": "https://tarkov.help/ru/quest/zabudem-starye-obidy"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от кладовки заправки",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Забудем старые обиды",
+        "guide": "https://tarkov.help/ru/quest/zabudem-starye-obidy"
+      }
+    ]
+  },
+  {
+    "name": "Шприц с адреналином",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Водохлёб. Секреты",
+        "guide": "https://tarkov.help/ru/quest/vodohleb-sekrety"
+      }
+    ]
+  },
+  {
+    "name": "Бутылка физраствора",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Водохлёб. Секреты",
+        "guide": "https://tarkov.help/ru/quest/vodohleb-sekrety"
+      }
+    ]
+  },
+  {
+    "name": "Коробка с чаем 42 Signature Blend English Tea",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Гитарный медиатор Veritas",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Статуэтка ворона",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      },
+      {
+        "name": "Красиво жить не запретишь. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Маска Pestily",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Полумаска Shroud",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Банка зернового кофе Dr. Lupo's",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Антикварный топор",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Потрепанная антикварная книга",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Оружейная смазка #FireKlean",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Серебряный жетон",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Масло для бороды Deadlyslob's",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Золотой смартфон 1GPhone",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Накладные усы",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Повязка на плечо Evasion",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Плюшевая игрушка Loot Lord",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Крысиный яд LVNDMARK's",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Бумажник WZ",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Банка газировки RatCola",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Балаклава Smoke",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от погрузчика Missam",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Видеокассета с фильмом \"Киборг-убийца\" из проката \"Проходимец\"",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Книга рецептов BakeEzy",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Очки JohnB \"Liquid DNB\"",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Легкая армированная маска Glorious E",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Рыжая накладная борода Baddie",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Бронежилет DRD Body Armor",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Ключница Gingy",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Золотое яйцо",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      },
+      {
+        "name": "Красиво жить не запретишь. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish"
+      }
+    ]
+  },
+  {
+    "name": "Пропуск для прессы (выписан на NoiceGuy)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Статуэтка попугая Axel",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      },
+      {
+        "name": "Красиво жить не запретишь. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Мягкая игрушка BEAR Buddy",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Реплика ножа кунай Tamatthi",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Газовый трубный разводной ключ Inseq",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Кроссовка бренда Viibiin",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Шина Tigzresq",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Балаклава Nut Sack",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Золотая гантель Mazoni",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Ушанка Домонтовича",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Копилка SheefGG",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Дискета Dunduk",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "СD-диск DesmondPilak",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Коллекционер",
+        "guide": "https://tarkov.help/ru/quest/kollekczioner"
+      }
+    ]
+  },
+  {
+    "name": "Защищенный контейнер \"Эпсилон\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Выбор",
+        "guide": "https://tarkov.help/ru/quest/vybor"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Деда Мороза",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Депутата Муткевича",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Сектанта",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Рыжего",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Дикого",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Киллы",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Решалы",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Дэна",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка Тагиллы",
+    "count": 2,
+    "in_raid": 1,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Малое предпринимательство. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/maloe-predprinimatelstvo-1"
+      },
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Бронежилет БНТИ \"Модуль-3М\"",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Снабженец",
+        "guide": "https://tarkov.help/ru/quest/snabzhenecz"
+      }
+    ]
+  },
+  {
+    "name": "Болтовое ружье ТОЗ-106 20к",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Снабженец",
+        "guide": "https://tarkov.help/ru/quest/snabzhenecz"
+      }
+    ]
+  },
+  {
+    "name": "Защищенный флеш-накопитель",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Что на флешке?",
+        "guide": "https://tarkov.help/ru/quest/chto-na-fleshke"
+      },
+      {
+        "name": "Мутное дело",
+        "guide": "https://tarkov.help/ru/quest/mutnoe-delo"
+      }
+    ]
+  },
+  {
+    "name": "Доллары",
+    "count": 13000,
+    "in_raid": 0,
+    "not_in_raid": 13000,
+    "quests": [
+      {
+        "name": "Друг с запада. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/drug-s-zapada-chast-2"
+      },
+      {
+        "name": "Путевка в санаторий. Часть 6",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-6"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от комнаты 220 общежития",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Реагент. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/reagent-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Респираторная маска",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Витамины. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/vitaminy-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Набор для переливания крови",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Витамины. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/vitaminy-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Нож сектанта",
+    "count": 12,
+    "in_raid": 12,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Ночная прогулка",
+        "guide": "https://tarkov.help/ru/quest/nochnaya-progulka"
+      }
+    ]
+  },
+  {
+    "name": "Баллон пропана (5л)",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Водохлёб. Добытчик",
+        "guide": "https://tarkov.help/ru/quest/vodohleb-dobitchik"
+      },
+      {
+        "name": "Путевка в санаторий. Часть 7",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-7"
+      }
+    ]
+  },
+  {
+    "name": "Тепловизионный прицел Trijicon \"REAP-IR\"",
+    "count": 16,
+    "in_raid": 0,
+    "not_in_raid": 16,
+    "quests": [
+      {
+        "name": "Выгодное предприятие",
+        "guide": "https://tarkov.help/ru/quest/vygodnoe-predpriyatie"
+      },
+      {
+        "name": "Оружейник. Часть 22",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-22"
+      }
+    ]
+  },
+  {
+    "name": "Бронежилет БНТИ \"Жук\" (Флора Цифра)",
+    "count": 15,
+    "in_raid": 0,
+    "not_in_raid": 15,
+    "quests": [
+      {
+        "name": "Гарантия безопасности",
+        "guide": "https://tarkov.help/ru/quest/garantiya-bezopasnosti"
+      }
+    ]
+  },
+  {
+    "name": "Бронешлем ЛШЗ-5 \"Вулкан-5\" (Черный)",
+    "count": 12,
+    "in_raid": 0,
+    "not_in_raid": 12,
+    "quests": [
+      {
+        "name": "Гарантия безопасности",
+        "guide": "https://tarkov.help/ru/quest/garantiya-bezopasnosti"
+      }
+    ]
+  },
+  {
+    "name": "Бронезабрало для шлема \"Маска-1Щ\" (Killa Edition)",
+    "count": 3,
+    "in_raid": 0,
+    "not_in_raid": 3,
+    "quests": [
+      {
+        "name": "Гарантия безопасности",
+        "guide": "https://tarkov.help/ru/quest/garantiya-bezopasnosti"
+      }
+    ]
+  },
+  {
+    "name": "Штурмовая винтовка HK 416A5 5.56x45",
+    "count": 16,
+    "in_raid": 0,
+    "not_in_raid": 16,
+    "quests": [
+      {
+        "name": "Учиться никогда не поздно",
+        "guide": "https://tarkov.help/ru/quest/uchitsya-nikogda-ne-pozdno"
+      },
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "5.56x45мм MK 318 Mod 0 (SOST)",
+    "count": 4500,
+    "in_raid": 0,
+    "not_in_raid": 4500,
+    "quests": [
+      {
+        "name": "Учиться никогда не поздно",
+        "guide": "https://tarkov.help/ru/quest/uchitsya-nikogda-ne-pozdno"
+      }
+    ]
+  },
+  {
+    "name": "Мачете УВСР Тайга-1",
+    "count": 8,
+    "in_raid": 0,
+    "not_in_raid": 8,
+    "quests": [
+      {
+        "name": "Учиться никогда не поздно",
+        "guide": "https://tarkov.help/ru/quest/uchitsya-nikogda-ne-pozdno"
+      }
+    ]
+  },
+  {
+    "name": "Стимулятор M.U.L.E.",
+    "count": 31,
+    "in_raid": 1,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      },
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "Регенеративный препарат Пропитал",
+    "count": 30,
+    "in_raid": 0,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      }
+    ]
+  },
+  {
+    "name": "Коктейль \"Обдолбос 2\"",
+    "count": 30,
+    "in_raid": 0,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      }
+    ]
+  },
+  {
+    "name": "Боевой стимулятор SJ6 TGLabs",
+    "count": 35,
+    "in_raid": 5,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      },
+      {
+        "name": "Проверка - Часть 3",
+        "guide": "https://tarkov.help/ru/quest/proverak-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Регенеративный стимулятор eTG-change",
+    "count": 30,
+    "in_raid": 0,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      }
+    ]
+  },
+  {
+    "name": "Боевой стимулятор SJ9 TGLabs",
+    "count": 31,
+    "in_raid": 1,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      },
+      {
+        "name": "Проверка - Часть 3",
+        "guide": "https://tarkov.help/ru/quest/proverak-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Боевой стимулятор SJ12 TGLabs",
+    "count": 30,
+    "in_raid": 0,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      }
+    ]
+  },
+  {
+    "name": "Препарат Мельдонин",
+    "count": 31,
+    "in_raid": 1,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Закрепиться на позиции",
+        "guide": "https://tarkov.help/ru/quest/zakrepitsya-na-pozicii"
+      },
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "Видеокарта",
+    "count": 33,
+    "in_raid": 3,
+    "not_in_raid": 30,
+    "quests": [
+      {
+        "name": "Фиксация прибыли",
+        "guide": "https://tarkov.help/ru/quest/fiksaciya-pribyli"
+      },
+      {
+        "name": "Садоводство. Часть 4",
+        "guide": "https://tarkov.help/ru/quest/sadovodstvo-chast-4"
+      }
+    ]
+  },
+  {
+    "name": "Монета Биткоина",
+    "count": 15,
+    "in_raid": 0,
+    "not_in_raid": 15,
+    "quests": [
+      {
+        "name": "Фиксация прибыли",
+        "guide": "https://tarkov.help/ru/quest/fiksaciya-pribyli"
+      }
+    ]
+  },
+  {
+    "name": "Бутылка водки \"Тарковская\"",
+    "count": 22,
+    "in_raid": 10,
+    "not_in_raid": 12,
+    "quests": [
+      {
+        "name": "Жизненный урок",
+        "guide": "https://tarkov.help/ru/quest/zhiznennyj-urok"
+      },
+      {
+        "name": "Выпивка",
+        "guide": "https://tarkov.help/ru/quest/vypivka"
+      },
+      {
+        "name": "Горькая победа",
+        "guide": "https://tarkov.help/ru/quest/gorkaya-pobeda"
+      }
+    ]
+  },
+  {
+    "name": "Бутылка виски Dan Jackiel",
+    "count": 25,
+    "in_raid": 10,
+    "not_in_raid": 15,
+    "quests": [
+      {
+        "name": "Жизненный урок",
+        "guide": "https://tarkov.help/ru/quest/zhiznennyj-urok"
+      },
+      {
+        "name": "Выпивка",
+        "guide": "https://tarkov.help/ru/quest/vypivka"
+      }
+    ]
+  },
+  {
+    "name": "Бутылка самогона \"Лютый Топорист\"",
+    "count": 17,
+    "in_raid": 0,
+    "not_in_raid": 17,
+    "quests": [
+      {
+        "name": "Жизненный урок",
+        "guide": "https://tarkov.help/ru/quest/zhiznennyj-urok"
+      },
+      {
+        "name": "Горькая победа",
+        "guide": "https://tarkov.help/ru/quest/gorkaya-pobeda"
+      }
+    ]
+  },
+  {
+    "name": "Сухой паек MRE",
+    "count": 5,
+    "in_raid": 0,
+    "not_in_raid": 5,
+    "quests": [
+      {
+        "name": "Гуманитарка",
+        "guide": "https://tarkov.help/ru/quest/gumanitarka"
+      }
+    ]
+  },
+  {
+    "name": "Коктейль \"Обдолбос\"",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "P22 (Препарат 22)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "Шприц с L1 (Норадреналин)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Образцы",
+        "guide": "https://tarkov.help/ru/quest/obrazczy"
+      }
+    ]
+  },
+  {
+    "name": "Программируемый процессор Virtex",
+    "count": 7,
+    "in_raid": 7,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Лендлиз. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/lendliz-chast-2"
+      },
+      {
+        "name": "Заказ",
+        "guide": "https://tarkov.help/ru/quest/zakaz"
+      }
+    ]
+  },
+  {
+    "name": "Военный COFDM беспроводной передатчик сигналов",
+    "count": 11,
+    "in_raid": 11,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Лендлиз. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/lendliz-chast-2"
+      },
+      {
+        "name": "Заказ",
+        "guide": "https://tarkov.help/ru/quest/zakaz"
+      },
+      {
+        "name": "Сетевой провайдер - Часть 1",
+        "guide": "https://tarkov.help/ru/quest/setevoy-provider-1"
+      },
+      {
+        "name": "Ключ от Башни",
+        "guide": "https://tarkov.help/ru/quest/klyuch-ot-bashni"
+      }
+    ]
+  },
+  {
+    "name": "WD-40 (100мл)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путевка в санаторий. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Стеклоочиститель Clin",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путевка в санаторий. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Гофрированный шланг",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путевка в санаторий. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-3"
+      },
+      {
+        "name": "Путевка в санаторий. Часть 7",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-7"
+      }
+    ]
+  },
+  {
+    "name": "Отбеливатель Ox",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путевка в санаторий. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Щелочное средство для промывки теплообменных поверхностей",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путевка в санаторий. Часть 7",
+        "guide": "https://tarkov.help/ru/quest/putevka-v-sanatorij-chast-7"
+      }
+    ]
+  },
+  {
+    "name": "Твердотельный накопитель VPX Flash Storage Module",
+    "count": 6,
+    "in_raid": 6,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Заказ",
+        "guide": "https://tarkov.help/ru/quest/zakaz"
+      },
+      {
+        "name": "Импорт",
+        "guide": "https://tarkov.help/ru/quest/import"
+      }
+    ]
+  },
+  {
+    "name": "Считыватель UHF RFID",
+    "count": 6,
+    "in_raid": 6,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Заказ",
+        "guide": "https://tarkov.help/ru/quest/zakaz"
+      },
+      {
+        "name": "Импорт",
+        "guide": "https://tarkov.help/ru/quest/import"
+      }
+    ]
+  },
+  {
+    "name": "Военный флеш-накопитель",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Заказ",
+        "guide": "https://tarkov.help/ru/quest/zakaz"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АКС-74У 5.45x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Зенит \"Б-11\" для АКС-74У",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Силовой кабель",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Садоводство. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/sadovodstvo-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Тройник",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Садоводство. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/sadovodstvo-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Печатная плата",
+    "count": 10,
+    "in_raid": 10,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Садоводство. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/sadovodstvo-chast-2"
+      },
+      {
+        "name": "Сигнал. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/signal-chast-2"
+      },
+      {
+        "name": "Небеса в огне",
+        "guide": "https://tarkov.help/ru/quest/nebesa-v-ogne"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет-пулемет HK MP5 9x19 (Navy 3 Round Burst)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Магазин X Products \"X-5\" на 50 патронов 9x19 для HK MP5",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Центральный процессор",
+    "count": 4,
+    "in_raid": 4,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Сигнал. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/signal-chast-2"
+      },
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Аккумуляторная батарея",
+    "count": 7,
+    "in_raid": 7,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Сигнал. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/signal-chast-2"
+      },
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      },
+      {
+        "name": "Небеса в огне",
+        "guide": "https://tarkov.help/ru/quest/nebesa-v-ogne"
+      }
+    ]
+  },
+  {
+    "name": "Разбитый смартфон GPhone",
+    "count": 7,
+    "in_raid": 7,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Сигнал. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/signal-chast-2"
+      },
+      {
+        "name": "Сетевой провайдер - Часть 1",
+        "guide": "https://tarkov.help/ru/quest/setevoy-provider-1"
+      }
+    ]
+  },
+  {
+    "name": "Процессорный кулер",
+    "count": 15,
+    "in_raid": 15,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Садоводство. Часть 4",
+        "guide": "https://tarkov.help/ru/quest/sadovodstvo-chast-4"
+      }
+    ]
+  },
+  {
+    "name": "Пучок проводов",
+    "count": 6,
+    "in_raid": 6,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Удобрения",
+        "guide": "https://tarkov.help/ru/quest/udobreniya"
+      },
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Конденсаторы",
+    "count": 6,
+    "in_raid": 6,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Удобрения",
+        "guide": "https://tarkov.help/ru/quest/udobreniya"
+      },
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Самозарядный карабин Симонова Молот СКС 7.62x39 Охотничье-Промысловый",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 4",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-4"
+      }
+    ]
+  },
+  {
+    "name": "Помповое ружье Remington Model 870 12к",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 5",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-5"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Magpul \"MOE\" для M870",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 5",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-5"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Fortis \"Shift\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 6",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-6"
+      }
+    ]
+  },
+  {
+    "name": "Магазин Magpul \"PMAG 30 GEN M3\" на 30 патронов 7.62x39 для АК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 6",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-6"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АКМ 7.62x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 6",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-6"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Зенит \"Б-30\" с накладкой \"Б-31C\" для АК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Крышка ствольной коробки Зенит \"Б-33\" для АК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Дульный тормоз-компенсатор Зенит \"ДТК-1\" 7.62x39 и 5.45x39 для АК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Зенит \"РК-0\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Пистолетная рукоятка Зенит \"РК-3\" для АК",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      },
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Приклад Зенит \"ПТ-3 Классика\" для АК",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      },
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Магазин на 30 патронов 5.45x39 для АК-12",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Тактический фонарь Зенит \"Клещ-2ИКС + ЛЦУ\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АКС-74Н 5.45x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 8",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-8"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет SIG P226R 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 9",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-9"
+      }
+    ]
+  },
+  {
+    "name": "Накладка Stainless Elite Wooden для P226",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 9",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-9"
+      }
+    ]
+  },
+  {
+    "name": "Затвор Stainless Elite для P226",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 9",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-9"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АК-105 5.45x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 10",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-10"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет-пулемет TDI KRISS Vector Gen.2 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 11",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-11"
+      }
+    ]
+  },
+  {
+    "name": "Крепление Mk.5 Modular Rail для KRISS Vector",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 11",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-11"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Tactical Dynamics \"Skeletonized Foregrip\"",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 11",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-11"
+      },
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет-пулемет SIG MPX 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 12",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-12"
+      }
+    ]
+  },
+  {
+    "name": "Пистолетная рукоятка Tactical Dynamics \"Skeletonized Grip\" для AR-15",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 12",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-12"
+      }
+    ]
+  },
+  {
+    "name": "Пламегаситель Yankee Hill \"Annihilator\" мультикалиберный",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 12",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-12"
+      }
+    ]
+  },
+  {
+    "name": "Тактический фонарь Steiner \"LAS/TAC 2\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 12",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-12"
+      }
+    ]
+  },
+  {
+    "name": "Марксманская винтовка Remington R11 RSASS 7.62x51",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 13",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-13"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АКМН 7.62x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 18",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-18"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Magpul \"MOE AKM\" для АК (Черное)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 18",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-18"
+      }
+    ]
+  },
+  {
+    "name": "Пистолетная рукоятка Magpul \"MOE\" для АК (Черная)",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 18",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-18"
+      },
+      {
+        "name": "Оружейник. Часть 19",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-19"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Magpul \"M-LOK AFG\" (Черная)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 18",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-18"
+      }
+    ]
+  },
+  {
+    "name": "Дульный тормоз-компенсатор Ротор 43 7.62x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 18",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-18"
+      }
+    ]
+  },
+  {
+    "name": "Гибридный прицельный комплекс EOTech \"HHS-1\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 18",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-18"
+      }
+    ]
+  },
+  {
+    "name": "Винтовка Springfield Armory M1A 7.62x51",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 20",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-20"
+      }
+    ]
+  },
+  {
+    "name": "Крепление UltiMAK \"M8 Forward Optic\" для M14",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 20",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-20"
+      }
+    ]
+  },
+  {
+    "name": "Оптический прицел 34мм Nightforce \"ATACR 7-35x56\"",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 20",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-20"
+      },
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Коллиматорный прицел Aimpoint \"Micro T-1\"",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 20",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-20"
+      },
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Тактический блок Holosun \"LS321\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 20",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-20"
+      }
+    ]
+  },
+  {
+    "name": "Глушитель KAC \"QDSS NT4\" 5.56x45 (FDE)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 22",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-22"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Alexander Arms \"MK10\" винтовочной длины для AR-15",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 22",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-22"
+      }
+    ]
+  },
+  {
+    "name": "Наглазник на прицел Trijicon \"REAP-IR\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 22",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-22"
+      }
+    ]
+  },
+  {
+    "name": "Сигареты Malboro",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Вредная привычка",
+        "guide": "https://tarkov.help/ru/quest/vrednaya-privychka"
+      }
+    ]
+  },
+  {
+    "name": "Сигареты Strike",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Вредная привычка",
+        "guide": "https://tarkov.help/ru/quest/vrednaya-privychka"
+      }
+    ]
+  },
+  {
+    "name": "Сигареты Wilston",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Вредная привычка",
+        "guide": "https://tarkov.help/ru/quest/vrednaya-privychka"
+      }
+    ]
+  },
+  {
+    "name": "Глушитель SureFire \"SOCOM556-RC2\" 5.56x45",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Magpul \"RVG\" (FDE)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "Голографический прицел EOTech \"EXPS3-0\" (Песочный)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "Пистолетная рукоятка Magpul \"MOE\" для AR-15 (FDE)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "Приклад Magpul \"UBR GEN2\" для AR-15 (FDE)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "Тактический блок L3Harris LA-5B/PEQ",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 14",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-14"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Специальный АС \"Вал\" 9x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 15",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-15"
+      }
+    ]
+  },
+  {
+    "name": "Приклад FAB Defense \"GL-SHOCK\" для AR-15",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 15",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-15"
+      }
+    ]
+  },
+  {
+    "name": "Тактический блок L3Harris AN/PEQ-15",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 15",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-15"
+      },
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Ночной прицел НСПУ-М",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 15",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-15"
+      }
+    ]
+  },
+  {
+    "name": "Снайперская винтовка Lobaev Arms ДВЛ-10 7.62x51",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 16",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-16"
+      }
+    ]
+  },
+  {
+    "name": "Автомат Калашникова АК-102 5.56x45",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 17",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-17"
+      }
+    ]
+  },
+  {
+    "name": "Дульное устройство Ferfrans \"CRD Concussion Reduction Device\" 5.56x45",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 17",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-17"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Magpul \"AFG\" (Олива)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 17",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-17"
+      }
+    ]
+  },
+  {
+    "name": "Тактический фонарь Зенит \"Клещ-2У\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 17",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-17"
+      }
+    ]
+  },
+  {
+    "name": "Труба приклада для РПК-16",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 17",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-17"
+      }
+    ]
+  },
+  {
+    "name": "Магазин Circle 10 на 30 патронов 5.56x45 для SLR-106/АК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 17",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-17"
+      }
+    ]
+  },
+  {
+    "name": "Приклад Magpul \"UBR GEN2\" для AR-15 (Черный)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 19",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-19"
+      }
+    ]
+  },
+  {
+    "name": "Шасси SAG \"MK1\" для СВД",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 19",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-19"
+      }
+    ]
+  },
+  {
+    "name": "Оптический прицел 30мм March Tactical \"3-24x42 FFP\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 19",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-19"
+      }
+    ]
+  },
+  {
+    "name": "Снайперская винтовка СВДС 7.62x54R",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 19",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-19"
+      }
+    ]
+  },
+  {
+    "name": "Снайперская винтовка Remington Model 700 7.62x51",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет Colt M1911A1 .45 ACP",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Ложе AB Arms \"MOD*X GEN 3\" для M700",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Цевье AB Arms \"MOD*X GEN 3 KeyMod\" для M700",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Крепление-направляющая AB Arms \"MOD*X\" для M700",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Накладки Pachmayr \"American Legend Grip #423\" для M1911",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Дульный тормоз Anarchy Outdoors .45 ACP для M1911",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 21",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-21"
+      }
+    ]
+  },
+  {
+    "name": "Компоненты электроники",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Сетевой провайдер - Часть 1",
+        "guide": "https://tarkov.help/ru/quest/setevoy-provider-1"
+      },
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Боевой стимулятор SJ1 TGLabs",
+    "count": 15,
+    "in_raid": 15,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Проверка - Часть 3",
+        "guide": "https://tarkov.help/ru/quest/proverak-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Кусок оргстекла",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Ключ от Башни",
+        "guide": "https://tarkov.help/ru/quest/klyuch-ot-bashni"
+      }
+    ]
+  },
+  {
+    "name": "Изолента",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Ключ от Башни",
+        "guide": "https://tarkov.help/ru/quest/klyuch-ot-bashni"
+      }
+    ]
+  },
+  {
+    "name": "Военная печатная плата",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Ключ от Башни",
+        "guide": "https://tarkov.help/ru/quest/klyuch-ot-bashni"
+      }
+    ]
+  },
+  {
+    "name": "Рабочий LCD дисплей",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Ключ от Башни",
+        "guide": "https://tarkov.help/ru/quest/klyuch-ot-bashni"
+      },
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Штурмовая винтовка CMMG Mk47 Mutant 7.62x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Noveske \"SWS N6 Split\" для AR-10",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Ствол 409мм для Mk47 7.62x39",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Дульный тормоз Odin Works \"ATLAS-7\" 7.62x51 для AR-10",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Голографический прицел Vortex \"Razor AMG UH-1\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Приклад HK \"E1\" для AR-15",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Пистолетная рукоятка F1 Firearms \"Skeletonized Style 2\" для AR-15",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Магазин барабанный ProMag \"AK-A-16\" на 73 патрона 7.62x39 для АК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 23",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-23"
+      }
+    ]
+  },
+  {
+    "name": "Тепловизионный прицел FLIR \"RS-32 2.25-9x 35mm 60Hz\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Stark \"SE-5 Express Forward\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Глушитель KAC \"PRS/QDC\" 7.62x51",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Коллиматорный прицел Burris \"FastFire 3\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Приклад Magpul \"PRS GEN3\" для AR-15 (Черный)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Пистолетная рукоятка HK \"Ergo PSG-1 style\" для AR-15",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Цевье CMMG \"MK3 RML15 M-LOK\" длиной 15 дюймов для AR-10",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Направляющая NcSTAR \"MPR45\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Тактический блок Steiner \"DBAL-PL\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 24",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-24"
+      }
+    ]
+  },
+  {
+    "name": "Пулемет Калашникова Пехотный ПКП 7.62x54R",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 25",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-25"
+      }
+    ]
+  },
+  {
+    "name": "Цевье Зенит \"Б-50\" для ПК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 25",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-25"
+      }
+    ]
+  },
+  {
+    "name": "Приклад Зенит \"ПТ-2 Классика\" для ПК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 25",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-25"
+      }
+    ]
+  },
+  {
+    "name": "Дульный тормоз Зенит \"ДТК-1П\" 7.62x54R для ПК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 25",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-25"
+      }
+    ]
+  },
+  {
+    "name": "Оптический прицел НПЗ УСП-1 \"Тюльпан\" 4x",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 25",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-25"
+      }
+    ]
+  },
+  {
+    "name": "Короб на 100 патронов 7.62x54R для ПК",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. Часть 25",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-chast-25"
+      }
+    ]
+  },
+  {
+    "name": "SSD диск",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "USB Адаптер",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Мобильный повербанк",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Объектив NIXXOR",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Оперативная память",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Лампа накаливания",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Камера. Мотор!",
+        "guide": "https://tarkov.help/ru/quest/kamera-motor"
+      }
+    ]
+  },
+  {
+    "name": "Снайперская винтовка ОРСИС T-5000M 7.62x51",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет-пулемет ПП-19-01 \"Витязь\" 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет Glock 17 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Сошки Harris \"S-BRM 6-9\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Тактическая рукоятка Зенит \"РК-6\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Тактический фонарь Зенит \"Клещ-2П + ЛЦУ\"",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Ствол 114мм с резьбой Double Diamond для Glock 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Втулка предохранительная Double Diamond для Glock 9x19",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Накладка Pachmayr \"Tactical Grip Glove\" для Glock",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Магазин Magpul \"PMAG GL9\" на 21 патрон 9x19 для Glock",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Оружейник. По старой дружбе",
+        "guide": "https://tarkov.help/ru/quest/oruzhejnik-po-staroj-druzhbe"
+      }
+    ]
+  },
+  {
+    "name": "Шапка-ушанка",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Модный приговор",
+        "guide": "https://tarkov.help/ru/quest/modnyj-prigovor"
+      }
+    ]
+  },
+  {
+    "name": "Ковбойская шляпа",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Модный приговор",
+        "guide": "https://tarkov.help/ru/quest/modnyj-prigovor"
+      }
+    ]
+  },
+  {
+    "name": "Балаклава Призрак",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Благодарность",
+        "guide": "https://tarkov.help/ru/quest/blagodarnost"
+      }
+    ]
+  },
+  {
+    "name": "Арафатка (Зеленая)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Благодарность",
+        "guide": "https://tarkov.help/ru/quest/blagodarnost"
+      }
+    ]
+  },
+  {
+    "name": "Очки RayBench \"Hipster Reserve\"",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Благодарность",
+        "guide": "https://tarkov.help/ru/quest/blagodarnost"
+      }
+    ]
+  },
+  {
+    "name": "Очки с круглой оправой",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Благодарность",
+        "guide": "https://tarkov.help/ru/quest/blagodarnost"
+      }
+    ]
+  },
+  {
+    "name": "Активные наушники Peltor \"ComTac II\" (OD Green)",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Горячая доставка",
+        "guide": "https://tarkov.help/ru/quest/goryachaya-dostavka"
+      }
+    ]
+  },
+  {
+    "name": "Общевойсковой шлем 6Б47 \"Ратник-БШ\" (Олива)",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Горячая доставка",
+        "guide": "https://tarkov.help/ru/quest/goryachaya-dostavka"
+      }
+    ]
+  },
+  {
+    "name": "Бронежилет БНТИ \"Гжель-К\"",
+    "count": 4,
+    "in_raid": 0,
+    "not_in_raid": 4,
+    "quests": [
+      {
+        "name": "Горячая доставка",
+        "guide": "https://tarkov.help/ru/quest/goryachaya-dostavka"
+      },
+      {
+        "name": "Шить — не тужить. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/shit-ne-tuzhit-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Лыжная шапка с прорезями для глаз",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Шить — не тужить. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/shit-ne-tuzhit-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Туристический рюкзак \"Пилигрим\"",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Шить — не тужить. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/shit-ne-tuzhit-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Присадка для дизельного топлива",
+    "count": 8,
+    "in_raid": 4,
+    "not_in_raid": 4,
+    "quests": [
+      {
+        "name": "Кровь войны. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/krov-vojny-chast-2"
+      },
+      {
+        "name": "Холодный запуск",
+        "guide": "https://tarkov.help/ru/quest/holodniy-zapusk"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от касс Goshan",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Супервайзер",
+        "guide": "https://tarkov.help/ru/quest/supervajzer"
+      }
+    ]
+  },
+  {
+    "name": "Бронежилет 6Б43 \"Забрало-Ш\" (Флора Цифра)",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Шить — не тужить. Часть 3",
+        "guide": "https://tarkov.help/ru/quest/shit-ne-tuzhit-chast-3"
+      }
+    ]
+  },
+  {
+    "name": "Канистра с очищенной водой",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Выпивка",
+        "guide": "https://tarkov.help/ru/quest/vypivka"
+      }
+    ]
+  },
+  {
+    "name": "Бутылка пива \"Певко светлое\"",
+    "count": 20,
+    "in_raid": 20,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Выпивка",
+        "guide": "https://tarkov.help/ru/quest/vypivka"
+      }
+    ]
+  },
+  {
+    "name": "Ременно-плечевая система WARTECH \"TV-109 + TV-106\" (A-TACS FG)",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Шить — не тужить. Часть 4",
+        "guide": "https://tarkov.help/ru/quest/shit-ne-tuzhit-chast-4"
+      }
+    ]
+  },
+  {
+    "name": "Разгрузочный жилет \"BlackRock Chest Rig\" (Серый)",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Шить — не тужить. Часть 4",
+        "guide": "https://tarkov.help/ru/quest/shit-ne-tuzhit-chast-4"
+      }
+    ]
+  },
+  {
+    "name": "Бронзовый лев",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Красиво жить не запретишь. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish"
+      }
+    ]
+  },
+  {
+    "name": "Статуэтка коня",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Красиво жить не запретишь. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish"
+      }
+    ]
+  },
+  {
+    "name": "Статуэтка кота",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Красиво жить не запретишь. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish"
+      }
+    ]
+  },
+  {
+    "name": "Золотые часы Roler Submariner",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Красиво жить не запретишь. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish"
+      }
+    ]
+  },
+  {
+    "name": "Антикварный чайник",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Красиво жить не запретишь. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Антикварная ваза",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Красиво жить не запретишь. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/krasivo-zhit-ne-zapretish-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Арамидная ткань",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Текстиль. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/tekstil-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Ткань Рипстоп",
+    "count": 10,
+    "in_raid": 10,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Текстиль. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/tekstil-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Моток паракорда",
+    "count": 3,
+    "in_raid": 3,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Текстиль. Часть 1",
+        "guide": "https://tarkov.help/ru/quest/tekstil-chast-1"
+      }
+    ]
+  },
+  {
+    "name": "Полиамидная ткань Кордура",
+    "count": 10,
+    "in_raid": 10,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Текстиль. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/tekstil-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Флисовая ткань",
+    "count": 10,
+    "in_raid": 10,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Текстиль. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/tekstil-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Липкая лента \"KEKТЕЙП\"",
+    "count": 5,
+    "in_raid": 5,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Текстиль. Часть 2",
+        "guide": "https://tarkov.help/ru/quest/tekstil-chast-2"
+      }
+    ]
+  },
+  {
+    "name": "Сумка Санитара",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Специальное предложение",
+        "guide": "https://tarkov.help/ru/quest/specialnoe-predlojenie"
+      }
+    ]
+  },
+  {
+    "name": "Разгрузочный жилет с бронепластинами Crye Precision \"AVS\" (Tagilla Edition)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Специальное предложение",
+        "guide": "https://tarkov.help/ru/quest/specialnoe-predlojenie"
+      }
+    ]
+  },
+  {
+    "name": "Разгрузочный жилет LBT-1961A Load Bearing Chest Rig (Goons Edition)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Специальное предложение",
+        "guide": "https://tarkov.help/ru/quest/specialnoe-predlojenie"
+      }
+    ]
+  },
+  {
+    "name": "Фрейм система Mystery Ranch \"NICE COMM 3 BVS\" (Coyote)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Специальное предложение",
+        "guide": "https://tarkov.help/ru/quest/specialnoe-predlojenie"
+      }
+    ]
+  },
+  {
+    "name": "Разгрузочный жилет с бронепластинами Crye Precision \"CPC\" (Goons Edition)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Специальное предложение",
+        "guide": "https://tarkov.help/ru/quest/specialnoe-predlojenie"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка бойца BEAR",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Фигурка бойца USEC",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Новое начало",
+        "guide": "https://tarkov.help/ru/quest/novoe-nachalo"
+      }
+    ]
+  },
+  {
+    "name": "Сухой паек \"Искра\"",
+    "count": 5,
+    "in_raid": 3,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Знакомство",
+        "guide": "https://tarkov.help/ru/quest/znakomstvo"
+      },
+      {
+        "name": "Путь выживальщика. Запасливый",
+        "guide": "https://tarkov.help/ru/quest/put-vyzhivalshhika-zapaslivyj"
+      }
+    ]
+  },
+  {
+    "name": "Банка тушеной говядины (Большая)",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Знакомство",
+        "guide": "https://tarkov.help/ru/quest/znakomstvo"
+      }
+    ]
+  },
+  {
+    "name": "Лапша быстрого приготовления",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Знакомство",
+        "guide": "https://tarkov.help/ru/quest/znakomstvo"
+      }
+    ]
+  },
+  {
+    "name": "Бутылка воды (0.6л)",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Путь выживальщика. Запасливый",
+        "guide": "https://tarkov.help/ru/quest/put-vyzhivalshhika-zapaslivyj"
+      }
+    ]
+  },
+  {
+    "name": "Хирургический набор CMS",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Скорая помощь",
+        "guide": "https://tarkov.help/ru/quest/skoraya-pomoshh"
+      }
+    ]
+  },
+  {
+    "name": "Пистолет ТТ-33 7.62x25 ТТ (Золотой)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путь охотника. Трофей",
+        "guide": "https://tarkov.help/ru/quest/put-ohotnika-trofej"
+      }
+    ]
+  },
+  {
+    "name": "Бронешлем \"Маска-1Щ\" (Killa Edition)",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путь охотника. Переучёт",
+        "guide": "https://tarkov.help/ru/quest/put-ohotnika-pereuchyot"
+      }
+    ]
+  },
+  {
+    "name": "Ключ от схрона Штурмана",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путь охотника. Санитар леса",
+        "guide": "https://tarkov.help/ru/quest/put-ohotnika-sanitar-lesa"
+      }
+    ]
+  },
+  {
+    "name": "Кепка BOSS",
+    "count": 1,
+    "in_raid": 1,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Путь охотника. Начальник завода",
+        "guide": "https://tarkov.help/ru/quest/put-ohotnika-nachalnik-zavoda"
+      }
+    ]
+  },
+  {
+    "name": "Палка говяжьей колбасы \"Соленый Пёс\"",
+    "count": 3,
+    "in_raid": 1,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Продразведка",
+        "guide": "https://tarkov.help/ru/quest/prodrazvedka"
+      },
+      {
+        "name": "Горькая победа",
+        "guide": "https://tarkov.help/ru/quest/gorkaya-pobeda"
+      }
+    ]
+  },
+  {
+    "name": "Металлическая топливная канистра",
+    "count": 2,
+    "in_raid": 2,
+    "not_in_raid": 0,
+    "quests": [
+      {
+        "name": "Инициация",
+        "guide": "https://tarkov.help/ru/quest/iniciaciya"
+      }
+    ]
+  },
+  {
+    "name": "Документы компании TerraGroup",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Ответная услуга",
+        "guide": "https://tarkov.help/ru/quest/otvetnaya-usluga"
+      }
+    ]
+  },
+  {
+    "name": "Сухарики ржаные",
+    "count": 4,
+    "in_raid": 0,
+    "not_in_raid": 4,
+    "quests": [
+      {
+        "name": "Горькая победа",
+        "guide": "https://tarkov.help/ru/quest/gorkaya-pobeda"
+      }
+    ]
+  },
+  {
+    "name": "Набор инструментов",
+    "count": 2,
+    "in_raid": 0,
+    "not_in_raid": 2,
+    "quests": [
+      {
+        "name": "Небеса в огне",
+        "guide": "https://tarkov.help/ru/quest/nebesa-v-ogne"
+      }
+    ]
+  },
+  {
+    "name": "Пропуск на объект 14-4 KORD на имя Аршавина К. (восстановленный)",
+    "count": 1,
+    "in_raid": 0,
+    "not_in_raid": 1,
+    "quests": [
+      {
+        "name": "Они уже здесь",
+        "guide": "https://tarkov.help/ru/quest/oni-uje-zdes"
+      }
+    ]
+  }
+]
