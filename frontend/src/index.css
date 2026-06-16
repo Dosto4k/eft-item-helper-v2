@@ -1,0 +1,58 @@
+:root {
+  /* Военная цветовая палитра */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --bg-card: #2d2d2d;
+  --bg-hover: #383838;
+
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+
+  --accent-green: #4a7c59;
+  --accent-green-light: #5a8c69;
+  --accent-green-dark: #3a6c49;
+  --accent-orange: #c17f59;
+  --accent-red: #8b4513;
+
+  --border-color: #3a3a3a;
+  --shadow: rgba(0, 0, 0, 0.4);
+
+  --font-main: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main), serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Скроллбар в стиле милитари */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green-light);
+}
