@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv("DJ_SECRET_KEY")
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
 INTERNAL_IPS = ["127.0.0.1"]
 
@@ -91,3 +91,5 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = "static/"
+
+STATIC_ROOT = BASE_DIR / "staticfiles"

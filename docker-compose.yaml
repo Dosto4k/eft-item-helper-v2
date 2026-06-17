@@ -1,0 +1,31 @@
+services:
+  backend:
+    build: ./backend
+    restart: always
+    expose:
+      - 8000
+    env_file:
+      - ./backend/.env
+    command: bash entrypoint.sh
+    volumes:
+      - django_static:/app/staticfiles
+    networks:
+      - eft-item-helper
+  
+  nginx:
+    build: ./nginx
+    volumes:
+      - django_static:/web/staticfiles
+    ports:
+      - 80:80
+    depends_on:
+      backend:
+        condition: service_started
+    networks:
+      - eft-item-helper
+
+volumes:
+  django_static:
+
+networks:
+  eft-item-helper:
