@@ -24,7 +24,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "django_extensions",
-    "users.apps.UsersConfig",
     "item_counter.apps.ItemCounterConfig",
 ]
 
