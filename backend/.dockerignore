@@ -1,0 +1,10 @@
+.ruff_cache
+.venv
+.vscode
+.dockerignore
+.env
+.gitignore
+.pre-commit-config.yaml
+db.sqlite3
+docker-compose.yaml
+Dockerfile
