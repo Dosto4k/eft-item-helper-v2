@@ -24,8 +24,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "django_extensions",
-    "users.apps.UsersConfig",
+    "rest_framework",
+    "rest_framework_simplejwt",
     "item_counter.apps.ItemCounterConfig",
+    "authentication.apps.AuthenticationConfig",
 ]
 
 MIDDLEWARE = [
@@ -38,6 +40,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+}
 
 ROOT_URLCONF = "core.urls"
 
