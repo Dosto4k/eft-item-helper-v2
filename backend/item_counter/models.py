@@ -70,6 +70,9 @@ class UserItem(models.Model):
     class Meta:
         verbose_name = "Собранные предметы пользователя"
         verbose_name_plural = "Собранные предметы пользователей"
+        constraints = [
+            models.UniqueConstraint(fields=["user", "item"], name="unique_user_item")
+        ]
 
     def __str__(self) -> str:
         return f"{self.user}: {self.item}"
