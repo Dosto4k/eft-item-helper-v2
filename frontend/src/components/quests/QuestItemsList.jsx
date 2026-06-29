@@ -6,6 +6,29 @@ import QuestItemStats from './QuestItemStats';
 import QuestItemCard from './QuestItemCard';
 
 const QuestItemsList = ({ items, loading, error, onRefresh, onUpdate }) => {
+    // Обработка ошибки авторизации
+    if (error === 'Не авторизован. Пожалуйста, войдите.') {
+        return (
+            <>
+                <Header onRefresh={onRefresh} />
+                <div className="error" style={{ textAlign: 'center', padding: '40px' }}>
+                    <div style={{ fontSize: '48px', marginBottom: '16px' }}>🔒</div>
+                    <h2>Сессия истекла</h2>
+                    <p style={{ marginTop: '8px', color: '#666' }}>
+                        Пожалуйста, войдите заново
+                    </p>
+                    <button 
+                        onClick={() => window.location.href = '/'}
+                        className="auth-submit"
+                        style={{ maxWidth: '200px', margin: '20px auto' }}
+                    >
+                        Войти
+                    </button>
+                </div>
+            </>
+        );
+    }
+
     if (loading) {
         return <Loading />;
     }
