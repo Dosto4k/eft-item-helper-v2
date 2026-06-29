@@ -486,3 +486,54 @@ input:focus {
         justify-content: center;
     }
 }
+
+/* Quest Tags */
+.quest-item-quests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.quest-tag {
+    background: #e8f0fe;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #1a73e8;
+    transition: all 0.2s;
+}
+
+.quest-tag-link {
+    cursor: pointer;
+    text-decoration: none;
+    background: #e8f0fe;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #1a73e8;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid transparent;
+}
+
+.quest-tag-link:hover {
+    background: #d2e3fc;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.2);
+    text-decoration: none;
+    border-color: #1a73e8;
+}
+
+.quest-tag-link:active {
+    transform: translateY(0);
+}
+
+.quest-tag-link::after {
+    content: '↗';
+    font-size: 10px;
+    opacity: 0.6;
+    margin-left: 2px;
+}

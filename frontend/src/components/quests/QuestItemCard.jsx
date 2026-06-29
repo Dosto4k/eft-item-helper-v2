@@ -18,34 +18,41 @@ const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
         
         setIsLoading(true);
         
-        // Оптимистичное обновление UI
         const delta = action === 'increment' ? 1 : -1;
         const field = inRaid ? 'collect_in_raid' : 'collect_out_raid';
         const oldValue = localItem[field];
         const newValue = oldValue + delta;
         
-        // Проверка границ
         if (newValue < 0) return;
         if (inRaid && newValue > localItem.required_in_raid) return;
         if (!inRaid && newValue > localItem.required_out_raid) return;
         
-        // Обновляем локально
         setLocalItem(prev => ({
             ...prev,
             [field]: newValue
         }));
         
         try {
-            // Отправляем запрос
             await onAction(localItem.id, action, inRaid);
         } catch (error) {
-            // Откатываем при ошибке
             setLocalItem(prev => ({
                 ...prev,
                 [field]: oldValue
             }));
         } finally {
             setIsLoading(false);
+        }
+    };
+
+    // Обработчик клика по квесту
+    const handleQuestClick = (quest) => {
+        if (quest.guide) {
+            // Открываем ссылку в новой вкладке
+            window.open(quest.guide, '_blank', 'noopener,noreferrer');
+        } else if (quest.url) {
+            window.open(quest.url, '_blank', 'noopener,noreferrer');
+        } else if (quest.link) {
+            window.open(quest.link, '_blank', 'noopener,noreferrer');
         }
     };
 
@@ -86,11 +93,31 @@ const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
 
                     {localItem.quests && localItem.quests.length > 0 && (
                         <div className="quest-item-quests">
-                            {localItem.quests.map((quest) => (
-                                <span key={quest.name} className="quest-tag">
-                                    {quest.name}
-                                </span>
-                            ))}
+                            {localItem.quests.map((quest) => {
+                                // Проверяем есть ли ссылка
+                                const questLink = quest.guide || quest.url || quest.link;
+                                
+                                return questLink ? (
+                                    <a
+                                        key={quest.name}
+                                        href={questLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="quest-tag quest-tag-link"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            handleQuestClick(quest);
+                                        }}
+                                        title={`Открыть гайд по квесту "${quest.name}"`}
+                                    >
+                                        {quest.name} 🔗
+                                    </a>
+                                ) : (
+                                    <span key={quest.name} className="quest-tag">
+                                        {quest.name}
+                                    </span>
+                                );
+                            })}
                         </div>
                     )}
                 </div>
