@@ -10,6 +10,7 @@ class QuestSerializer(serializers.ModelSerializer):
 
 
 class CountQuestItemSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField(source="item.id", read_only=True)
     name = serializers.CharField(source="item.name", read_only=True)
     required_in_raid = serializers.IntegerField(
         source="item.quest_details.in_raid", read_only=True
@@ -24,6 +25,7 @@ class CountQuestItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserItem
         fields = [
+            "id",
             "name",
             "required_in_raid",
             "required_out_raid",
