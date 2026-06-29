@@ -4,8 +4,20 @@ import Error from '../common/Error';
 import Header from '../layout/Header';
 import QuestItemStats from './QuestItemStats';
 import QuestItemCard from './QuestItemCard';
+import Pagination from '../common/Pagination';
 
-const QuestItemsList = ({ items, loading, error, onRefresh, onUpdate }) => {
+const QuestItemsList = ({ 
+    items, 
+    loading, 
+    error, 
+    pagination,
+    onRefresh, 
+    onUpdate,
+    onPageChange,
+    onPrev,
+    onNext,
+    onLimitChange
+}) => {
     // Обработка ошибки авторизации
     if (error === 'Не авторизован. Пожалуйста, войдите.') {
         return (
@@ -52,11 +64,31 @@ const QuestItemsList = ({ items, loading, error, onRefresh, onUpdate }) => {
             <Header onRefresh={onRefresh} />
             {error && <Error message={error} />}
             <QuestItemStats items={items} />
-            <div>
+            
+            <div className="quest-items-list">
                 {items.map((item) => (
-                    <QuestItemCard key={item.id} item={item} onAction={onUpdate} />
+                    <QuestItemCard 
+                        key={item.id} 
+                        item={item} 
+                        onAction={onUpdate} 
+                    />
                 ))}
             </div>
+            
+            {pagination.totalPages > 1 && (
+                <Pagination
+                    currentPage={pagination.currentPage}
+                    totalPages={pagination.totalPages}
+                    onPageChange={onPageChange}
+                    onPrev={onPrev}
+                    onNext={onNext}
+                    hasPrev={!!pagination.previous}
+                    hasNext={!!pagination.next}
+                    totalItems={pagination.count}
+                    currentLimit={pagination.limit}
+                    onLimitChange={onLimitChange}
+                />
+            )}
         </>
     );
 };

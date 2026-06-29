@@ -14,8 +14,13 @@ function App() {
         items, 
         loading, 
         error, 
+        pagination,
         fetchItems, 
-        updateItem  // Используем оптимистичное обновление
+        updateItem,
+        nextPage,
+        prevPage,
+        goToPage,
+        changeLimit,
     } = useQuests();
 
     if (authLoading) {
@@ -45,8 +50,13 @@ function App() {
                 items={items}
                 loading={loading}
                 error={error}
-                onRefresh={fetchItems}
+                pagination={pagination}
+                onRefresh={() => fetchItems(pagination.currentPage, pagination.limit)}
                 onUpdate={updateItem}
+                onPageChange={goToPage}
+                onPrev={prevPage}
+                onNext={nextPage}
+                onLimitChange={changeLimit}
             />
         </div>
     );
