@@ -33,3 +33,12 @@ class CountQuestItemSerializer(serializers.ModelSerializer):
             "collect_out_raid",
             "quests",
         ]
+
+
+class QuestCountProgressSerializer(serializers.Serializer):
+    total = serializers.IntegerField(read_only=True)
+    completed = serializers.IntegerField(read_only=True)
+    in_raid_completed = serializers.IntegerField(read_only=True)
+    out_raid_completed = serializers.IntegerField(read_only=True)
+    progress = serializers.FloatField(read_only=True)
+    in_progress = serializers.IntegerField(read_only=True)
