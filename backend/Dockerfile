@@ -1,6 +1,9 @@
 FROM python:3.13-slim-trixie
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    ca-certificates \
+    netcat-openbsd
 
 ADD https://astral.sh/uv/install.sh /uv-installer.sh
 
