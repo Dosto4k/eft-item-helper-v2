@@ -70,6 +70,20 @@ class UserItem(models.Model):
     class Meta:
         verbose_name = "Собранные предметы пользователя"
         verbose_name_plural = "Собранные предметы пользователей"
+        constraints = [
+            models.UniqueConstraint(fields=["user", "item"], name="unique_user_item")
+        ]
 
     def __str__(self) -> str:
         return f"{self.user}: {self.item}"
+
+    def action_quest_count(self, in_raid: bool, delta: int) -> None:
+        """
+        Изменяет поле "quest_in_raid" или "quest_out_raid"
+        на delta в зависимости от in_raid
+        """
+        if in_raid:
+            self.quest_in_raid += delta
+        else:
+            self.quest_out_raid += delta
+        self.save(update_fields=["quest_in_raid" if in_raid else "quest_out_raid"])
