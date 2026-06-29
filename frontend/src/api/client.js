@@ -7,21 +7,8 @@ const apiClient = axios.create({
     },
 });
 
-// Переменная для отслеживания процесса обновления токена
-let isRefreshing = false;
-let failedQueue = [];
-
-// Обработка очереди запросов во время обновления токена
-const processQueue = (error, token = null) => {
-    failedQueue.forEach(prom => {
-        if (error) {
-            prom.reject(error);
-        } else {
-            prom.resolve(token);
-        }
-    });
-    failedQueue = [];
-};
+// Флаг для предотвращения множественных редиректов
+let isRedirecting = false;
 
 // Интерцептор для добавления токена
 apiClient.interceptors.request.use(
@@ -35,31 +22,25 @@ apiClient.interceptors.request.use(
     (error) => Promise.reject(error)
 );
 
-// Интерцептор для обработки ошибок и refresh токена
+// Интерцептор для обработки ошибок
 apiClient.interceptors.response.use(
     (response) => response,
     async (error) => {
         const originalRequest = error.config;
         
-        // Если ошибка не 401 или запрос уже повторялся
-        if (error.response?.status !== 401 || originalRequest._retry) {
+        // Если это запрос к auth или ошибка не 401 - пропускаем
+        if (error.response?.status !== 401 || 
+            originalRequest.url?.includes('/auth/') ||
+            originalRequest._retry) {
             return Promise.reject(error);
         }
 
-        // Если уже идет обновление токена, добавляем запрос в очередь
-        if (isRefreshing) {
-            return new Promise((resolve, reject) => {
-                failedQueue.push({ resolve, reject });
-            })
-            .then(token => {
-                originalRequest.headers.Authorization = `Bearer ${token}`;
-                return apiClient(originalRequest);
-            })
-            .catch(err => Promise.reject(err));
+        // Если уже идет редирект - не повторяем
+        if (isRedirecting) {
+            return Promise.reject(error);
         }
 
         originalRequest._retry = true;
-        isRefreshing = true;
 
         try {
             const refreshToken = localStorage.getItem('refresh_token');
@@ -67,35 +48,36 @@ apiClient.interceptors.response.use(
                 throw new Error('No refresh token');
             }
 
-            // Запрос на обновление токена
             const response = await axios.post('/api/auth/token/refresh/', {
                 refresh: refreshToken,
             });
 
-            const { access } = response.data;
+            const newAccessToken = response.data.access;
+            localStorage.setItem('access_token', newAccessToken);
             
-            // Сохраняем новый токен
-            localStorage.setItem('access_token', access);
-            
-            // Обновляем заголовок для текущего запроса
-            originalRequest.headers.Authorization = `Bearer ${access}`;
-            
-            // Обрабатываем очередь запросов
-            processQueue(null, access);
-            
+            // Повторяем исходный запрос с новым токеном
+            originalRequest.headers.Authorization = `Bearer ${newAccessToken}`;
             return apiClient(originalRequest);
-        } catch (refreshError) {
-            // Если не удалось обновить токен - выходим
-            processQueue(refreshError, null);
-            localStorage.removeItem('access_token');
-            localStorage.removeItem('refresh_token');
             
-            // Редирект на страницу входа
-            window.location.href = '/';
+        } catch (refreshError) {
+            // Только если нет токена или refresh невалидный - разлогиниваем
+            if (refreshError.response?.status === 401 || 
+                refreshError.message === 'No refresh token') {
+                
+                isRedirecting = true;
+                localStorage.removeItem('access_token');
+                localStorage.removeItem('refresh_token');
+                
+                // Используем событие вместо прямого редиректа
+                window.dispatchEvent(new CustomEvent('unauthorized'));
+                
+                // Небольшая задержка перед редиректом
+                setTimeout(() => {
+                    isRedirecting = false;
+                }, 500);
+            }
             
             return Promise.reject(refreshError);
-        } finally {
-            isRefreshing = false;
         }
     }
 );

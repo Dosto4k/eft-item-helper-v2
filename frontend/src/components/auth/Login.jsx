@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import Error from '../common/Error';
 
-const Login = ({ onSwitchToRegister }) => {
+const Login = ({ onSwitchToRegister, onSuccess }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -27,6 +27,7 @@ const Login = ({ onSwitchToRegister }) => {
                 setError('');
                 setUsername('');
                 setPassword('');
+                if (onSuccess) onSuccess();
             } else {
                 const data = await response.json();
                 setError(data.detail || 'Ошибка входа. Проверьте логин и пароль.');
@@ -41,7 +42,6 @@ const Login = ({ onSwitchToRegister }) => {
 
     return (
         <>
-            <h2 className="auth-title">Вход в систему</h2>
             {error && <Error message={error} />}
             <form onSubmit={handleSubmit}>
                 <div className="auth-form-group">

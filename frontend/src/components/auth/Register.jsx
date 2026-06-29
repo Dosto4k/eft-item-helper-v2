@@ -62,7 +62,6 @@ const Register = ({ onSwitchToLogin, onSuccess }) => {
 
     return (
         <>
-            <h2 className="auth-title">Регистрация</h2>
             {success && <div className="auth-success">{success}</div>}
             {error && <Error message={error} />}
             <form onSubmit={handleSubmit}>

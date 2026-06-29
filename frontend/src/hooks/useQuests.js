@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { questsApi } from '../api/quests';
 
 export const useQuests = () => {
@@ -14,9 +14,13 @@ export const useQuests = () => {
         currentPage: 1,
         totalPages: 0,
     });
+    const isFetching = useRef(false);
 
     const fetchItems = useCallback(async (page = 1, limit = 15) => {
+        if (isFetching.current) return;
+        
         try {
+            isFetching.current = true;
             setLoading(true);
             const offset = (page - 1) * limit;
             
@@ -42,39 +46,11 @@ export const useQuests = () => {
             console.error(err);
         } finally {
             setLoading(false);
+            isFetching.current = false;
         }
     }, []);
 
-    // Переход на следующую страницу
-    const nextPage = useCallback(() => {
-        if (pagination.next) {
-            const nextPageNum = pagination.currentPage + 1;
-            fetchItems(nextPageNum, pagination.limit);
-        }
-    }, [pagination, fetchItems]);
-
-    // Переход на предыдущую страницу
-    const prevPage = useCallback(() => {
-        if (pagination.previous) {
-            const prevPageNum = pagination.currentPage - 1;
-            fetchItems(prevPageNum, pagination.limit);
-        }
-    }, [pagination, fetchItems]);
-
-    // Переход на конкретную страницу
-    const goToPage = useCallback((page) => {
-        if (page >= 1 && page <= pagination.totalPages) {
-            fetchItems(page, pagination.limit);
-        }
-    }, [pagination, fetchItems]);
-
-    // Изменение количества элементов на странице
-    const changeLimit = useCallback((newLimit) => {
-        fetchItems(1, newLimit);
-    }, [fetchItems]);
-
-    // Оптимизированное обновление предмета
-    const updateItem = useCallback(async (id, action, inRaid) => {
+    const updateItem = useCallback(async (id, action, inRaid, onProgressUpdate) => {
         try {
             // Оптимистичное обновление
             setItems(prevItems => 
@@ -93,8 +69,12 @@ export const useQuests = () => {
 
             await questsApi.updateQuestCount(id, action, inRaid);
             setError('');
+            
+            if (onProgressUpdate) {
+                await onProgressUpdate();
+            }
         } catch (err) {
-            // Откат при ошибке
+            // Откат
             setItems(prevItems => 
                 prevItems.map(item => {
                     if (item.id === id) {
@@ -116,32 +96,31 @@ export const useQuests = () => {
         }
     }, []);
 
-    // Обновление одного предмета через API
-    const updateItemWithSync = useCallback(async (id, action, inRaid) => {
-        try {
-            await questsApi.updateQuestCount(id, action, inRaid);
-            
-            // Синхронизируем конкретный предмет на текущей странице
-            const updatedItem = await questsApi.getQuestItem(id);
-            if (updatedItem) {
-                setItems(prevItems => 
-                    prevItems.map(item => 
-                        item.id === id ? updatedItem : item
-                    )
-                );
-            }
-            setError('');
-        } catch (err) {
-            console.error('Ошибка обновления:', err);
-            setError(err.response?.data?.detail || 'Ошибка обновления');
-            setTimeout(() => setError(''), 3000);
-            throw err;
+    const nextPage = useCallback(() => {
+        if (pagination.next) {
+            fetchItems(pagination.currentPage + 1, pagination.limit);
         }
-    }, []);
+    }, [pagination, fetchItems]);
+
+    const prevPage = useCallback(() => {
+        if (pagination.previous) {
+            fetchItems(pagination.currentPage - 1, pagination.limit);
+        }
+    }, [pagination, fetchItems]);
+
+    const goToPage = useCallback((page) => {
+        if (page >= 1 && page <= pagination.totalPages) {
+            fetchItems(page, pagination.limit);
+        }
+    }, [pagination, fetchItems]);
+
+    const changeLimit = useCallback((newLimit) => {
+        fetchItems(1, newLimit);
+    }, [fetchItems]);
 
     useEffect(() => {
         fetchItems(1, 15);
-    }, [fetchItems]);
+    }, []); // 👈 Пустой массив зависимостей
 
     return { 
         items, 
@@ -150,7 +129,6 @@ export const useQuests = () => {
         pagination,
         fetchItems, 
         updateItem,
-        updateItemWithSync,
         nextPage,
         prevPage,
         goToPage,

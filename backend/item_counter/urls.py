@@ -1,6 +1,10 @@
 from django.urls import path
 
-from item_counter.views import QuestItemCountActionView, UserQuestItemsCountView
+from item_counter.views import (
+    QuestItemCountActionView,
+    UserQuestItemsCountView,
+    UserQuestItemProgress,
+)
 
 app_name = "item-counter"
 urlpatterns = [
@@ -8,6 +12,11 @@ urlpatterns = [
     path(
         "quests/<int:pk>/",
         QuestItemCountActionView.as_view(),
-        name="action-quest-count",
+        name="action-quest-items-count",
+    ),
+    path(
+        "quests/progress/",
+        UserQuestItemProgress.as_view(),
+        name="progress-quest-item-count",
     ),
 ]

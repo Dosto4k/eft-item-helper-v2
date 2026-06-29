@@ -2,7 +2,7 @@ import React from 'react';
 import Loading from '../common/Loading';
 import Error from '../common/Error';
 import Header from '../layout/Header';
-import QuestItemStats from './QuestItemStats';
+import QuestProgress from './QuestProgress';
 import QuestItemCard from './QuestItemCard';
 import Pagination from '../common/Pagination';
 
@@ -11,14 +11,17 @@ const QuestItemsList = ({
     loading, 
     error, 
     pagination,
+    progress,
+    progressLoading,
+    progressError,
     onRefresh, 
+    onRefreshProgress,
     onUpdate,
     onPageChange,
     onPrev,
     onNext,
     onLimitChange
 }) => {
-    // Обработка ошибки авторизации
     if (error === 'Не авторизован. Пожалуйста, войдите.') {
         return (
             <>
@@ -45,11 +48,17 @@ const QuestItemsList = ({
         return <Loading />;
     }
 
-    if (items.length === 0) {
+    if (items.length === 0 && pagination.count === 0) {
         return (
             <>
                 <Header onRefresh={onRefresh} />
                 {error && <Error message={error} />}
+                <QuestProgress 
+                    progress={progress}
+                    loading={progressLoading}
+                    error={progressError}
+                    onRefresh={onRefreshProgress}
+                />
                 <div className="empty-state">
                     <div className="empty-icon">🎯</div>
                     <div className="empty-title">Нет квестовых предметов</div>
@@ -63,7 +72,13 @@ const QuestItemsList = ({
         <>
             <Header onRefresh={onRefresh} />
             {error && <Error message={error} />}
-            <QuestItemStats items={items} />
+            
+            <QuestProgress 
+                progress={progress}
+                loading={progressLoading}
+                error={progressError}
+                onRefresh={onRefreshProgress}
+            />
             
             <div className="quest-items-list">
                 {items.map((item) => (

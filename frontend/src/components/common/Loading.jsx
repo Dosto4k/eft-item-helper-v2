@@ -1,7 +1,12 @@
 import React from 'react';
 
 const Loading = ({ message = 'Загрузка...' }) => {
-    return <div className="loading">{message}</div>;
+    return (
+        <div className="loading-container">
+            <div className="loading-spinner"></div>
+            <p className="loading-text">{message}</p>
+        </div>
+    );
 };
 
 export default Loading;

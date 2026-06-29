@@ -18,6 +18,18 @@ export const questsApi = {
         }
     },
 
+    getQuestProgress: async () => {
+        try {
+            const response = await apiClient.get('/item-counter/quests/progress/');
+            return response.data;
+        } catch (error) {
+            if (error.response?.status === 401) {
+                throw new Error('Не авторизован. Пожалуйста, войдите.');
+            }
+            throw error;
+        }
+    },
+
     getQuestItem: async (id) => {
         try {
             const response = await apiClient.get(`/item-counter/quests/${id}/`);

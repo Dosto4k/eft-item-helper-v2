@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QuestItemActions from './QuestItemActions';
 
-const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
+const QuestItemCard = ({ item, onAction }) => {
     const [localItem, setLocalItem] = useState(item);
     const [isLoading, setIsLoading] = useState(false);
 
-    // Обновляем локальный предмет при изменении props
-    React.useEffect(() => {
+    useEffect(() => {
         setLocalItem(item);
     }, [item]);
 
@@ -44,15 +43,10 @@ const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
         }
     };
 
-    // Обработчик клика по квесту
     const handleQuestClick = (quest) => {
-        if (quest.guide) {
-            // Открываем ссылку в новой вкладке
-            window.open(quest.guide, '_blank', 'noopener,noreferrer');
-        } else if (quest.url) {
-            window.open(quest.url, '_blank', 'noopener,noreferrer');
-        } else if (quest.link) {
-            window.open(quest.link, '_blank', 'noopener,noreferrer');
+        const questLink = quest.guide || quest.url || quest.link;
+        if (questLink) {
+            window.open(questLink, '_blank', 'noopener,noreferrer');
         }
     };
 
@@ -65,26 +59,18 @@ const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
                         {isComplete && (
                             <span className="quest-item-badge">✅ Выполнено</span>
                         )}
-                        {isLoading && (
-                            <span className="quest-item-badge" style={{ 
-                                background: '#f0f0f0', 
-                                color: '#666',
-                                marginLeft: '8px'
-                            }}>
-                                ⏳ Обновление...
-                            </span>
-                        )}
+                        {/* Убрали надпись "Обновление..." */}
                     </h3>
 
                     <div className="quest-item-counts">
                         <div>
-                            <span style={{ color: '#666', fontSize: '13px' }}>В рейде:</span>
+                            <span style={{ color: '#666', fontSize: '13px' }}>Найдено в рейде:</span>
                             <span className={`quest-item-count ${localItem.collect_in_raid >= localItem.required_in_raid ? 'completed' : 'pending'}`}>
                                 {localItem.collect_in_raid} / {localItem.required_in_raid}
                             </span>
                         </div>
                         <div>
-                            <span style={{ color: '#666', fontSize: '13px' }}>Не в рейде:</span>
+                            <span style={{ color: '#666', fontSize: '13px' }}>Найдено не в рейде:</span>
                             <span className={`quest-item-count ${localItem.collect_out_raid >= localItem.required_out_raid ? 'completed' : 'pending'}`}>
                                 {localItem.collect_out_raid} / {localItem.required_out_raid}
                             </span>
@@ -94,9 +80,7 @@ const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
                     {localItem.quests && localItem.quests.length > 0 && (
                         <div className="quest-item-quests">
                             {localItem.quests.map((quest) => {
-                                // Проверяем есть ли ссылка
                                 const questLink = quest.guide || quest.url || quest.link;
-                                
                                 return questLink ? (
                                     <a
                                         key={quest.name}
@@ -104,10 +88,6 @@ const QuestItemCard = ({ item, onAction, isUpdating = false }) => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="quest-tag quest-tag-link"
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            handleQuestClick(quest);
-                                        }}
                                         title={`Открыть гайд по квесту "${quest.name}"`}
                                     >
                                         {quest.name} 🔗

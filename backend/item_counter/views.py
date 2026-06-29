@@ -11,7 +11,11 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from item_counter.models import Item, UserItem
-from item_counter.serializers import CountQuestItemSerializer
+from item_counter.serializers import (
+    CountQuestItemSerializer,
+    QuestCountProgressSerializer,
+)
+from item_counter.services import collect_quest_count_progress_data
 from item_counter.validators import (
     ACTION_DECREMENT,
     ACTION_INCREMENT,
@@ -86,3 +90,20 @@ class UserQuestItemsCountView(ListAPIView):
             )
             .prefetch_related("item__quests")
         )
+
+
+class UserQuestItemProgress(APIView):
+    permission_classes = (IsAuthenticated,)
+    http_method_names = ["get"]
+
+    def get_queryset(self) -> QuerySet[UserItem]:
+        user = self.request.user
+        return UserItem.objects.filter(user=user).select_related(
+            "item", "item__quest_details"
+        )
+
+    def get(self, request: Request, *args: Any, **kwargs: Any) -> Response:  # noqa:ANN401,ARG002
+        queryset = self.get_queryset()
+        progress_data = collect_quest_count_progress_data(queryset)
+        serializer = QuestCountProgressSerializer(progress_data)
+        return Response(data=serializer.data, status=status.HTTP_200_OK)
