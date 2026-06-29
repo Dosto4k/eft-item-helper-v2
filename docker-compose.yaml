@@ -11,7 +11,15 @@ services:
       - django_static:/app/staticfiles
     networks:
       - eft-item-helper
-  
+
+  frontend:
+    build: ./frontend
+    restart: always
+    expose:
+      - 80
+    networks:
+      - eft-item-helper
+
   nginx:
     build: ./nginx
     volumes:
@@ -20,6 +28,8 @@ services:
       - 80:80
     depends_on:
       backend:
+        condition: service_started
+      frontend:
         condition: service_started
     networks:
       - eft-item-helper
