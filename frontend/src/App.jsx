@@ -10,11 +10,13 @@ import './index.css';
 function App() {
     const { token, loading: authLoading } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
-    const { items, loading, error, fetchItems, updateItem } = useQuests();
-
-    const handleUpdate = async (id, action, inRaid) => {
-        await updateItem(id, action, inRaid);
-    };
+    const { 
+        items, 
+        loading, 
+        error, 
+        fetchItems, 
+        updateItem  // Используем оптимистичное обновление
+    } = useQuests();
 
     if (authLoading) {
         return <Loading message="Загрузка приложения..." />;
@@ -44,7 +46,7 @@ function App() {
                 loading={loading}
                 error={error}
                 onRefresh={fetchItems}
-                onUpdate={handleUpdate}
+                onUpdate={updateItem}
             />
         </div>
     );

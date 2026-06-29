@@ -1,6 +1,6 @@
 import React from 'react';
 
-const QuestItemActions = ({ item, onAction }) => {
+const QuestItemActions = ({ item, onAction, disabled = false }) => {
     const isInRaidMax = item.collect_in_raid >= item.required_in_raid;
     const isOutRaidMax = item.collect_out_raid >= item.required_out_raid;
     const isInRaidMin = item.collect_in_raid === 0;
@@ -12,16 +12,16 @@ const QuestItemActions = ({ item, onAction }) => {
                 <span className="action-label">В рейде</span>
                 <div className="action-buttons">
                     <button
-                        onClick={() => onAction(item.id, 'increment', true)}
+                        onClick={() => onAction('increment', true)}
                         className="btn-increment"
-                        disabled={isInRaidMax}
+                        disabled={disabled || isInRaidMax}
                     >
                         +
                     </button>
                     <button
-                        onClick={() => onAction(item.id, 'decrement', true)}
+                        onClick={() => onAction('decrement', true)}
                         className="btn-decrement"
-                        disabled={isInRaidMin}
+                        disabled={disabled || isInRaidMin}
                     >
                         −
                     </button>
@@ -32,16 +32,16 @@ const QuestItemActions = ({ item, onAction }) => {
                 <span className="action-label">Не в рейде</span>
                 <div className="action-buttons">
                     <button
-                        onClick={() => onAction(item.id, 'increment', false)}
+                        onClick={() => onAction('increment', false)}
                         className="btn-increment"
-                        disabled={isOutRaidMax}
+                        disabled={disabled || isOutRaidMax}
                     >
                         +
                     </button>
                     <button
-                        onClick={() => onAction(item.id, 'decrement', false)}
+                        onClick={() => onAction('decrement', false)}
                         className="btn-decrement"
-                        disabled={isOutRaidMin}
+                        disabled={disabled || isOutRaidMin}
                     >
                         −
                     </button>
