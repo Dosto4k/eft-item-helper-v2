@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import QuestItemActions from './QuestItemActions';
 
 const QuestItemCard = ({ item, onAction }) => {
     const [localItem, setLocalItem] = useState(item);
     const [isLoading, setIsLoading] = useState(false);
+    const [showQuests, setShowQuests] = useState(false);
 
     useEffect(() => {
         setLocalItem(item);
@@ -50,63 +50,132 @@ const QuestItemCard = ({ item, onAction }) => {
         }
     };
 
+    const toggleQuests = () => {
+        setShowQuests(!showQuests);
+    };
+
+    const inRaidPercent = Math.min((localItem.collect_in_raid / localItem.required_in_raid) * 100, 100);
+    const outRaidPercent = Math.min((localItem.collect_out_raid / localItem.required_out_raid) * 100, 100);
+
     return (
         <div className={`quest-item-card ${isComplete ? 'completed' : ''}`}>
             <div className="quest-item-content">
-                <div className="quest-item-info">
-                    <h3 className="quest-item-name">
-                        {localItem.name}
-                        {isComplete && (
-                            <span className="quest-item-badge">✅ Выполнено</span>
-                        )}
-                        {/* Убрали надпись "Обновление..." */}
-                    </h3>
+                {/* Название предмета */}
+                <div className="quest-item-header">
+                    <h3 className="quest-item-name">{localItem.name}</h3>
+                </div>
 
-                    <div className="quest-item-counts">
-                        <div>
-                            <span style={{ color: '#666', fontSize: '13px' }}>Найдено в рейде:</span>
-                            <span className={`quest-item-count ${localItem.collect_in_raid >= localItem.required_in_raid ? 'completed' : 'pending'}`}>
+                {/* Блок с прогресс-барами */}
+                <div className="quest-item-progress-block">
+                    {/* Бар для "В рейде" */}
+                    <div className="quest-item-progress-item">
+                        <div className="quest-item-progress-header">
+                            <span className="quest-item-progress-label">В рейде</span>
+                            <span className="quest-item-progress-count">
                                 {localItem.collect_in_raid} / {localItem.required_in_raid}
                             </span>
                         </div>
-                        <div>
-                            <span style={{ color: '#666', fontSize: '13px' }}>Найдено не в рейде:</span>
-                            <span className={`quest-item-count ${localItem.collect_out_raid >= localItem.required_out_raid ? 'completed' : 'pending'}`}>
-                                {localItem.collect_out_raid} / {localItem.required_out_raid}
-                            </span>
+                        <div className="quest-item-progress-wrapper">
+                            <button
+                                onClick={() => handleAction('decrement', true)}
+                                className="progress-btn decrement"
+                                disabled={isLoading || localItem.collect_in_raid === 0}
+                            >
+                                −
+                            </button>
+                            <div className="quest-item-progress-bar">
+                                <div 
+                                    className="quest-item-progress-fill in-raid"
+                                    style={{ width: `${inRaidPercent}%` }}
+                                />
+                            </div>
+                            <button
+                                onClick={() => handleAction('increment', true)}
+                                className="progress-btn increment"
+                                disabled={isLoading || localItem.collect_in_raid >= localItem.required_in_raid}
+                            >
+                                +
+                            </button>
                         </div>
                     </div>
 
-                    {localItem.quests && localItem.quests.length > 0 && (
-                        <div className="quest-item-quests">
-                            {localItem.quests.map((quest) => {
-                                const questLink = quest.guide || quest.url || quest.link;
-                                return questLink ? (
-                                    <a
-                                        key={quest.name}
-                                        href={questLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="quest-tag quest-tag-link"
-                                        title={`Открыть гайд по квесту "${quest.name}"`}
-                                    >
-                                        {quest.name} 🔗
-                                    </a>
-                                ) : (
-                                    <span key={quest.name} className="quest-tag">
-                                        {quest.name}
-                                    </span>
-                                );
-                            })}
+                    {/* Бар для "Не в рейде" */}
+                    <div className="quest-item-progress-item">
+                        <div className="quest-item-progress-header">
+                            <span className="quest-item-progress-label">Не в рейде</span>
+                            <span className="quest-item-progress-count">
+                                {localItem.collect_out_raid} / {localItem.required_out_raid}
+                            </span>
                         </div>
-                    )}
+                        <div className="quest-item-progress-wrapper">
+                            <button
+                                onClick={() => handleAction('decrement', false)}
+                                className="progress-btn decrement"
+                                disabled={isLoading || localItem.collect_out_raid === 0}
+                            >
+                                −
+                            </button>
+                            <div className="quest-item-progress-bar">
+                                <div 
+                                    className="quest-item-progress-fill out-raid"
+                                    style={{ width: `${outRaidPercent}%` }}
+                                />
+                            </div>
+                            <button
+                                onClick={() => handleAction('increment', false)}
+                                className="progress-btn increment"
+                                disabled={isLoading || localItem.collect_out_raid >= localItem.required_out_raid}
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                <QuestItemActions 
-                    item={localItem} 
-                    onAction={handleAction}
-                    disabled={isLoading}
-                />
+                {/* Выпадающий список квестов */}
+                {localItem.quests && localItem.quests.length > 0 && (
+                    <div className="quest-item-quests-toggle">
+                        <button 
+                            onClick={toggleQuests}
+                            className={`quests-toggle-btn ${showQuests ? 'active' : ''}`}
+                        >
+                            <span className="quests-toggle-label">
+                                📋 Квесты ({localItem.quests.length})
+                            </span>
+                            <span className={`quests-toggle-arrow ${showQuests ? 'open' : ''}`}>
+                                ▼
+                            </span>
+                        </button>
+                        
+                        {showQuests && (
+                            <div className="quests-dropdown">
+                                {localItem.quests.map((quest) => {
+                                    const questLink = quest.guide || quest.url || quest.link;
+                                    return questLink ? (
+                                        <a
+                                            key={quest.name}
+                                            href={questLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="quest-dropdown-item"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleQuestClick(quest);
+                                            }}
+                                        >
+                                            <span className="quest-dropdown-name">{quest.name}</span>
+                                            <span className="quest-dropdown-link">🔗</span>
+                                        </a>
+                                    ) : (
+                                        <div key={quest.name} className="quest-dropdown-item">
+                                            <span className="quest-dropdown-name">{quest.name}</span>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     );

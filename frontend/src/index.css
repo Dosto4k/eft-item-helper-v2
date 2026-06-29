@@ -209,186 +209,6 @@ input:focus {
     font-size: 14px;
 }
 
-/* Stats */
-.stats {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.stat-item {
-    background: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.stat-label {
-    color: #666;
-}
-
-.stat-value {
-    font-weight: 600;
-}
-
-.stat-value.completed {
-    color: #27ae60;
-}
-
-/* Quest Item Card */
-.quest-item-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid #e67e22;
-    transition: all 0.2s;
-}
-
-.quest-item-card.completed {
-    border-left-color: #27ae60;
-}
-
-.quest-item-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.quest-item-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.quest-item-info {
-    flex: 1;
-}
-
-.quest-item-name {
-    margin-bottom: 8px;
-}
-
-.quest-item-badge {
-    margin-left: 12px;
-    font-size: 14px;
-    color: #27ae60;
-    background: #e8f5e9;
-    padding: 2px 10px;
-    border-radius: 20px;
-}
-
-.quest-item-counts {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 8px;
-    flex-wrap: wrap;
-}
-
-.quest-item-count {
-    font-weight: 600;
-}
-
-.quest-item-count.completed {
-    color: #27ae60;
-}
-
-.quest-item-count.pending {
-    color: #e67e22;
-}
-
-.quest-item-quests {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 6px;
-}
-
-.quest-tag {
-    background: #e8f0fe;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #1a73e8;
-}
-
-/* Actions */
-.quest-item-actions {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.action-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.action-group:not(:last-child) {
-    margin-right: 8px;
-}
-
-.action-label {
-    font-size: 11px;
-    color: #666;
-    text-align: center;
-}
-
-.action-buttons {
-    display: flex;
-    gap: 4px;
-}
-
-.btn-increment {
-    background: #27ae60;
-    color: white;
-    padding: 4px 12px;
-    font-size: 16px;
-    min-width: 32px;
-}
-
-.btn-decrement {
-    background: #e74c3c;
-    color: white;
-    padding: 4px 12px;
-    font-size: 16px;
-    min-width: 32px;
-}
-
-.btn-increment:disabled,
-.btn-decrement:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .container {
-        padding: 12px;
-    }
-    
-    .quest-item-card {
-        padding: 16px;
-    }
-    
-    .quest-item-actions {
-        width: 100%;
-        justify-content: flex-start;
-        margin-top: 12px;
-    }
-    
-    .auth-container {
-        margin: 40px 12px;
-    }
-    
-    .auth-box {
-        padding: 24px;
-    }
-}
-
 /* Pagination */
 .pagination-container {
     margin-top: 24px;
@@ -487,57 +307,6 @@ input:focus {
     }
 }
 
-/* Quest Tags */
-.quest-item-quests {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 6px;
-}
-
-.quest-tag {
-    background: #e8f0fe;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #1a73e8;
-    transition: all 0.2s;
-}
-
-.quest-tag-link {
-    cursor: pointer;
-    text-decoration: none;
-    background: #e8f0fe;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #1a73e8;
-    transition: all 0.2s;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    border: 1px solid transparent;
-}
-
-.quest-tag-link:hover {
-    background: #d2e3fc;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.2);
-    text-decoration: none;
-    border-color: #1a73e8;
-}
-
-.quest-tag-link:active {
-    transform: translateY(0);
-}
-
-.quest-tag-link::after {
-    content: '↗';
-    font-size: 10px;
-    opacity: 0.6;
-    margin-left: 2px;
-}
-
 /* Progress Container */
 .progress-container {
     background: white;
@@ -545,556 +314,7 @@ input:focus {
     padding: 24px;
     margin-bottom: 24px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-/* Progress Header */
-.progress-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.progress-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a1a2e;
-    margin: 0;
-}
-
-.btn-refresh-small {
-    background: none;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-
-.btn-refresh-small:hover {
-    background: #f0f0f0;
-    transform: rotate(45deg);
-}
-
-/* Progress Bar */
-.progress-bar-wrapper {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.progress-bar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.progress-bar-label {
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-}
-
-.progress-bar-value {
-    font-size: 14px;
-    font-weight: 600;
-    color: #4a90d9;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background: #f0f0f0;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.progress-bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #4a90d9, #27ae60);
-    border-radius: 6px;
-    transition: width 0.6s ease;
-}
-
-/* Dual Progress */
-.progress-dual {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.progress-dual-item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.progress-dual-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.progress-dual-label {
-    font-size: 13px;
-    font-weight: 500;
-    color: #555;
-}
-
-.progress-dual-icon {
-    margin-right: 4px;
-}
-
-.progress-dual-value {
-    font-size: 13px;
-    font-weight: 600;
-    color: #333;
-}
-
-.progress-dual-bar {
-    width: 100%;
-    height: 8px;
-    background: #f0f0f0;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-dual-fill {
-    height: 100%;
-    border-radius: 4px;
-    transition: width 0.6s ease;
-}
-
-.progress-dual-fill.in-raid {
-    background: #e67e22;
-}
-
-.progress-dual-fill.out-raid {
-    background: #8e24aa;
-}
-
-/* Progress Cards */
-.progress-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    margin-bottom: 16px;
-}
-
-.progress-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 16px;
-    border-radius: 10px;
-    background: #f8f9fa;
-    transition: all 0.2s;
-}
-
-.progress-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.progress-card-icon {
-    font-size: 24px;
-    line-height: 1;
-}
-
-.progress-card-content {
-    flex: 1;
-    min-width: 0;
-}
-
-.progress-card-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1a1a2e;
-    line-height: 1.2;
-}
-
-.progress-card-label {
-    font-size: 12px;
-    color: #666;
-    font-weight: 500;
-}
-
-.progress-card-sub {
-    font-size: 11px;
-    color: #999;
-    margin-top: 2px;
-}
-
-/* Card Colors */
-.progress-card-completed {
-    background: #e8f5e9;
-}
-.progress-card-completed .progress-card-value {
-    color: #27ae60;
-}
-
-.progress-card-inraid {
-    background: #fff3e0;
-}
-.progress-card-inraid .progress-card-value {
-    color: #e67e22;
-}
-
-.progress-card-outraid {
-    background: #f3e5f5;
-}
-.progress-card-outraid .progress-card-value {
-    color: #8e24aa;
-}
-
-.progress-card-progress {
-    background: #e3f2fd;
-}
-.progress-card-progress .progress-card-value {
-    color: #1565c0;
-}
-
-/* Progress Total */
-.progress-total {
-    text-align: center;
-    padding-top: 16px;
-    border-top: 1px solid #f0f0f0;
-    font-size: 14px;
-    color: #666;
-}
-
-.progress-total-label {
-    font-weight: 500;
-}
-
-.progress-total-value {
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-left: 4px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .progress-container {
-        padding: 16px;
-    }
-    
-    .progress-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    
-    .progress-card {
-        padding: 12px 14px;
-    }
-    
-    .progress-card-value {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 480px) {
-    .progress-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-    }
-    
-    .progress-card {
-        padding: 10px 12px;
-        flex-direction: column;
-        text-align: center;
-        gap: 4px;
-    }
-    
-    .progress-card-icon {
-        font-size: 20px;
-    }
-    
-    .progress-card-value {
-        font-size: 16px;
-    }
-}
-
-/* Анимация для прогресс-баров */
-.progress-bar-fill,
-.progress-dual-fill {
-    transition: width 0.5s ease;
-}
-
-.progress-bar-fill.animated,
-.progress-dual-fill.animated {
-    animation: progressPulse 0.6s ease;
-}
-
-@keyframes progressPulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-        transform: scaleY(1.1);
-    }
-    100% {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
-
-/* Анимация для карточек при обновлении */
-.progress-card {
-    transition: all 0.3s ease;
-}
-
-.progress-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.progress-card-value {
-    transition: all 0.3s ease;
-}
-
-.progress-card-value.updated {
-    animation: numberPop 0.4s ease;
-}
-
-@keyframes numberPop {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-        color: #4a90d9;
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Skeleton Loading */
-.progress-skeleton {
-    padding: 4px 0;
-}
-
-.skeleton-bar {
-    height: 10px;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    border-radius: 6px;
-    margin-bottom: 16px;
-    animation: skeletonLoading 1.5s infinite;
-}
-
-.skeleton-bar:nth-child(2) {
-    height: 8px;
-    width: 80%;
-}
-
-.skeleton-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    margin-top: 16px;
-}
-
-.skeleton-card {
-    height: 80px;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    border-radius: 10px;
-    animation: skeletonLoading 1.5s infinite;
-}
-
-@keyframes skeletonLoading {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
-}
-
-/* Анимация обновления чисел */
-.progress-card-value.updated,
-.progress-bar-value.updated,
-.progress-dual-value.updated,
-.progress-total-value.updated {
-    animation: numberPop 0.4s ease;
-}
-
-@keyframes numberPop {
-    0% {
-        transform: scale(1);
-    }
-    40% {
-        transform: scale(1.15);
-        color: #4a90d9;
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Анимация для прогресс-баров */
-.progress-bar-fill,
-.progress-dual-fill {
-    transition: width 0.5s ease;
-}
-
-.progress-bar-fill.animated,
-.progress-dual-fill.animated {
-    animation: progressPulse 0.6s ease;
-}
-
-@keyframes progressPulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-        transform: scaleY(1.1);
-    }
-    100% {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
-
-/* Карточки - статичные, без мерцания */
-.progress-card {
-    transition: none;
-}
-
-.progress-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* Статичные заголовки */
-.progress-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    /* Убираем анимации */
-}
-
-.progress-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a1a2e;
-    margin: 0;
-}
-
-/* Статичные подписи */
-.progress-card-label,
-.progress-card-sub,
-.progress-dual-label {
-    /* Без анимаций */
-}
-
-/* Скрываем мигание при обновлении */
-.progress-container {
-    /* Убираем любые transition на самом контейнере */
-}
-
-/* Предотвращаем мигание при загрузке */
-#root {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Когда приложение загружено, растягиваем на всю ширину */
-#root > * {
-    width: 100%;
-}
-
-/* Плавное появление приложения */
-.app-enter {
-    animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Loading Component */
-.loading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
-    width: 100%;
-}
-
-.loading-spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f0f0f0;
-    border-top-color: #4a90d9;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.loading-text {
-    margin-top: 16px;
-    color: #666;
-    font-size: 14px;
-}
-
-.loading {
-    text-align: center;
-    padding: 40px;
-    color: #666;
-}
-
-/* Обновляем существующий .loading для совместимости */
-.loading::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border: 3px solid #ddd;
-    border-top-color: #4a90d9;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin-left: 12px;
-    vertical-align: middle;
-}
-
-/* Стабильные размеры для прогресса */
-.progress-container {
-    background: white;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    min-height: 280px; /* Фиксируем минимальную высоту */
+    min-height: 280px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -1115,22 +335,7 @@ input:focus {
     min-height: 24px;
 }
 
-.btn-refresh-small {
-    background: none;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    transition: all 0.2s;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-/* Стабильные размеры для прогресс-баров */
+/* Progress Bar */
 .progress-bar-wrapper {
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -1177,7 +382,7 @@ input:focus {
     transition: width 0.5s ease;
 }
 
-/* Стабильные размеры для двойных прогресс-баров */
+/* Dual Progress */
 .progress-dual {
     display: flex;
     flex-direction: column;
@@ -1205,6 +410,10 @@ input:focus {
     font-size: 13px;
     font-weight: 500;
     color: #555;
+}
+
+.progress-dual-icon {
+    margin-right: 4px;
 }
 
 .progress-dual-value {
@@ -1239,7 +448,7 @@ input:focus {
     background: #8e24aa;
 }
 
-/* Стабильные размеры для карточек */
+/* Progress Cards */
 .progress-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1255,7 +464,6 @@ input:focus {
     padding: 14px 16px;
     border-radius: 10px;
     background: #f8f9fa;
-    transition: none;
     min-height: 64px;
     box-sizing: border-box;
 }
@@ -1286,6 +494,11 @@ input:focus {
     min-height: 28px;
 }
 
+.progress-card-value.changed {
+    color: #4a90d9 !important;
+    transition: color 0.3s ease;
+}
+
 .progress-card-label {
     font-size: 12px;
     color: #666;
@@ -1300,7 +513,36 @@ input:focus {
     min-height: 16px;
 }
 
-/* Стабильный футер */
+/* Card Colors */
+.progress-card-completed {
+    background: #e8f5e9;
+}
+.progress-card-completed .progress-card-value {
+    color: #27ae60;
+}
+
+.progress-card-inraid {
+    background: #fff3e0;
+}
+.progress-card-inraid .progress-card-value {
+    color: #e67e22;
+}
+
+.progress-card-outraid {
+    background: #f3e5f5;
+}
+.progress-card-outraid .progress-card-value {
+    color: #8e24aa;
+}
+
+.progress-card-progress {
+    background: #e3f2fd;
+}
+.progress-card-progress .progress-card-value {
+    color: #1565c0;
+}
+
+/* Progress Total */
 .progress-total {
     text-align: center;
     padding-top: 16px;
@@ -1310,12 +552,32 @@ input:focus {
     min-height: 44px;
 }
 
-/* Числа с фиксированной шириной */
+.progress-total-label {
+    font-weight: 500;
+}
+
+.progress-total-value {
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-left: 4px;
+}
+
+.progress-total-value.changed {
+    color: #4a90d9 !important;
+    transition: color 0.3s ease;
+}
+
+/* Progress Numbers */
 .progress-number {
     display: inline-block;
     min-width: 20px;
     text-align: right;
     font-weight: 600;
+}
+
+.progress-number.changed {
+    color: #4a90d9 !important;
+    transition: color 0.3s ease;
 }
 
 .progress-separator {
@@ -1329,7 +591,6 @@ input:focus {
     font-weight: 400;
 }
 
-/* Пустое состояние */
 .progress-empty {
     text-align: center;
     padding: 40px 20px;
@@ -1337,92 +598,7 @@ input:focus {
     font-size: 14px;
 }
 
-/* Skeleton - фиксированных размеров */
-.progress-skeleton {
-    padding: 4px 0;
-    min-height: 200px;
-}
-
-.skeleton-bar {
-    height: 10px;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    border-radius: 6px;
-    margin-bottom: 16px;
-    animation: skeletonLoading 1.5s infinite;
-    min-height: 10px;
-}
-
-.skeleton-bar:nth-child(2) {
-    height: 8px;
-    width: 80%;
-}
-
-.skeleton-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    margin-top: 16px;
-}
-
-.skeleton-card {
-    height: 80px;
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200% 100%;
-    border-radius: 10px;
-    animation: skeletonLoading 1.5s infinite;
-}
-
-@keyframes skeletonLoading {
-    0% {
-        background-position: 200% 0;
-    }
-    100% {
-        background-position: -200% 0;
-    }
-}
-
-/* Анимация обновления чисел */
-.progress-number.updated,
-.progress-card-value.updated,
-.progress-total-value.updated {
-    animation: numberPop 0.4s ease;
-}
-
-@keyframes numberPop {
-    0% {
-        transform: scale(1);
-    }
-    40% {
-        transform: scale(1.15);
-        color: #4a90d9;
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Анимация прогресс-баров */
-.progress-bar-fill.animated,
-.progress-dual-fill.animated {
-    animation: progressPulse 0.6s ease;
-}
-
-@keyframes progressPulse {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-        transform: scaleY(1.1);
-    }
-    100% {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
-
-/* Responsive */
+/* Responsive Progress */
 @media (max-width: 768px) {
     .progress-container {
         padding: 16px;
@@ -1468,97 +644,403 @@ input:focus {
     }
 }
 
-/* Убираем агрессивные анимации */
-.progress-bar-fill,
-.progress-dual-fill {
-    transition: width 0.4s ease;
+/* Сетка карточек - всегда 3 колонки */
+.quest-items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
 }
 
-/* Убираем pulse анимацию, оставляем только плавное изменение ширины */
-.progress-bar-fill.animated,
-.progress-dual-fill.animated {
-    /* Убрано */
+/* Карточка - всё по центру */
+.quest-item-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #e67e22;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-height: 200px;
+    position: relative;
+    overflow: visible;
 }
 
-/* Только анимация для чисел */
-.progress-number.updated,
-.progress-card-value.updated,
-.progress-total-value.updated {
-    animation: numberPop 0.3s ease;
+.quest-item-card.completed {
+    border-left-color: #27ae60;
 }
 
-@keyframes numberPop {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-        color: #4a90d9;
-    }
-    100% {
-        transform: scale(1);
-    }
+.quest-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Убираем скелетон, оставляем всегда структуру */
-.progress-skeleton {
-    display: none !important;
+.quest-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 6px;
 }
 
-/* Заглушка при загрузке */
-.progress-empty {
+/* Название - по центру */
+.quest-item-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.quest-item-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
     text-align: center;
-    padding: 40px 20px;
-    color: #999;
-    font-size: 14px;
 }
 
-/* Для чисел при загрузке показываем точки */
-.progress-number.loading {
-    color: #ccc;
+/* Блок прогресс-баров - прижат к меню квестов */
+.quest-item-progress-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    flex: 0 1 auto;
+    margin-top: auto;
+    padding-bottom: 0;
 }
 
-/* Карточки всегда видны */
-.progress-card {
+/* Прогресс-бар */
+.quest-item-progress-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.quest-item-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.quest-item-progress-label {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+.quest-item-progress-count {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Центрированный прогресс-бар с кнопками */
+.quest-item-progress-wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 14px 16px;
-    border-radius: 10px;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Кнопки + и - */
+.progress-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.progress-btn.increment {
+    background: #27ae60;
+    color: white;
+}
+
+.progress-btn.increment:hover:not(:disabled) {
+    background: #219a52;
+    transform: scale(1.05);
+}
+
+.progress-btn.decrement {
+    background: #e74c3c;
+    color: white;
+}
+
+.progress-btn.decrement:hover:not(:disabled) {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.progress-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Прогресс-бар */
+.quest-item-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 60px;
+}
+
+.quest-item-progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.quest-item-progress-fill.in-raid {
+    background: #e67e22;
+}
+
+.quest-item-progress-fill.out-raid {
+    background: #8e24aa;
+}
+
+/* Кнопка показа квестов - прижата к низу с отступом от прогресс-баров */
+.quest-item-quests-toggle {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+.quests-toggle-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 14px;
     background: #f8f9fa;
-    transition: none;
-    min-height: 64px;
-    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
-/* При загрузке карточки не меняются */
-.progress-card.loading {
+.quests-toggle-btn:hover {
+    background: #f0f0f0;
+    border-color: #d0d0d0;
+}
+
+.quests-toggle-btn.active {
+    background: #e8f0fe;
+    border-color: #1a73e8;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.quests-toggle-label {
+    font-weight: 500;
+}
+
+.quests-toggle-arrow {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+    color: #999;
+}
+
+.quests-toggle-arrow.open {
+    transform: rotate(180deg);
+    color: #1a73e8;
+}
+
+/* Выпадающий список квестов - поверх карточки */
+.quests-dropdown {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin-bottom: 4px;
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 6px 0;
+    animation: dropdownSlideUp 0.2s ease;
+    pointer-events: auto;
+}
+
+@keyframes dropdownSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Стилизация скроллбара */
+.quests-dropdown::-webkit-scrollbar {
+    width: 4px;
+}
+
+.quests-dropdown::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 2px;
+}
+
+.quests-dropdown::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+    border-radius: 2px;
+}
+
+.quests-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0;
+}
+
+.quest-dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.15s;
+    cursor: pointer;
+}
+
+.quest-dropdown-item:hover {
+    background: #f0f4ff;
+}
+
+.quest-dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.quest-dropdown-name {
+    flex: 1;
+    font-weight: 450;
+}
+
+.quest-dropdown-link {
+    color: #1a73e8;
+    font-size: 14px;
+    margin-left: 12px;
     opacity: 0.7;
+    transition: opacity 0.2s;
 }
 
-/* Изменение цвета при обновлении цифр */
-.progress-number.changed,
-.progress-card-value.changed,
-.progress-total-value.changed {
-    color: #4a90d9 !important;
-    transition: color 0.3s ease;
+.quest-dropdown-item:hover .quest-dropdown-link {
+    opacity: 1;
 }
 
-/* Плавное возвращение цвета */
-.progress-number,
-.progress-card-value,
-.progress-total-value {
-    transition: color 0.3s ease;
+/* Чтобы карточка не обрезала выпадающее меню */
+.quest-items-grid {
+    overflow: visible;
 }
 
-/* Убираем старую анимацию */
-.progress-number.updated,
-.progress-card-value.updated,
-.progress-total-value.updated {
-    /* Убрано */
+.quest-item-card {
+    overflow: visible;
 }
 
-/* Убираем анимацию numberPop */
-@keyframes numberPop {
-    /* Убрано */
+/* Адаптивность */
+@media (max-width: 992px) {
+    .quest-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quest-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .quest-item-card {
+        padding: 12px;
+        min-height: 180px;
+    }
+    
+    .quest-item-name {
+        font-size: 14px;
+    }
+    
+    .quest-item-progress-label {
+        font-size: 11px;
+    }
+    
+    .quest-item-progress-count {
+        font-size: 11px;
+    }
+    
+    .progress-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+    
+    .quests-dropdown {
+        max-height: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quest-items-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quest-item-card {
+        padding: 10px;
+        min-height: 160px;
+    }
+    
+    .quest-item-name {
+        font-size: 13px;
+    }
+    
+    .quest-item-progress-label {
+        font-size: 10px;
+    }
+    
+    .quest-item-progress-count {
+        font-size: 10px;
+    }
+    
+    .progress-btn {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+    }
+    
+    .quests-toggle-btn {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+    
+    .quest-dropdown-item {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
 }

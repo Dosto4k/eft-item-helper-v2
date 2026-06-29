@@ -11,9 +11,8 @@ const Pagination = ({
     totalItems,
     currentLimit,
     onLimitChange,
-    limits = [10, 15, 25, 50, 100]
+    limits = [9, 12, 15, 18, 21, 24, 30, 36, 42, 48, 54, 60]
 }) => {
-    // Генерация номеров страниц для отображения
     const getPageNumbers = () => {
         const pages = [];
         const maxVisible = 5;
@@ -30,18 +29,15 @@ const Pagination = ({
             }
         }
         
-        // Добавляем первую страницу
         if (start > 1) {
             pages.push(1);
             if (start > 2) pages.push('...');
         }
         
-        // Добавляем видимые страницы
         for (let i = start; i <= end; i++) {
             pages.push(i);
         }
         
-        // Добавляем последнюю страницу
         if (end < totalPages) {
             if (end < totalPages - 1) pages.push('...');
             pages.push(totalPages);

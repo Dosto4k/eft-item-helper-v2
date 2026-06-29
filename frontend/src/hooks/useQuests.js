@@ -9,7 +9,7 @@ export const useQuests = () => {
         count: 0,
         next: null,
         previous: null,
-        limit: 15,
+        limit: 15, // 15 делится на 3
         offset: 0,
         currentPage: 1,
         totalPages: 0,
@@ -52,7 +52,6 @@ export const useQuests = () => {
 
     const updateItem = useCallback(async (id, action, inRaid, onProgressUpdate) => {
         try {
-            // Оптимистичное обновление
             setItems(prevItems => 
                 prevItems.map(item => {
                     if (item.id === id) {
@@ -74,7 +73,6 @@ export const useQuests = () => {
                 await onProgressUpdate();
             }
         } catch (err) {
-            // Откат
             setItems(prevItems => 
                 prevItems.map(item => {
                     if (item.id === id) {
@@ -120,7 +118,7 @@ export const useQuests = () => {
 
     useEffect(() => {
         fetchItems(1, 15);
-    }, []); // 👈 Пустой массив зависимостей
+    }, []);
 
     return { 
         items, 

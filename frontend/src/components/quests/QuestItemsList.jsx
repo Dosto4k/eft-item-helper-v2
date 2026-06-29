@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Loading from '../common/Loading';
 import Error from '../common/Error';
 import Header from '../layout/Header';
@@ -22,6 +22,29 @@ const QuestItemsList = ({
     onNext,
     onLimitChange
 }) => {
+    const [itemsPerRow, setItemsPerRow] = useState(4);
+
+    // Определяем количество колонок на основе ширины экрана
+    useEffect(() => {
+        const getItemsPerRow = () => {
+            const width = window.innerWidth;
+            if (width >= 1200) return 4;
+            if (width >= 992) return 3;
+            if (width >= 768) return 2;
+            if (width >= 480) return 2;
+            return 1;
+        };
+
+        const updateItemsPerRow = () => {
+            const newValue = getItemsPerRow();
+            setItemsPerRow(newValue);
+        };
+
+        updateItemsPerRow();
+        window.addEventListener('resize', updateItemsPerRow);
+        return () => window.removeEventListener('resize', updateItemsPerRow);
+    }, []);
+
     if (error === 'Не авторизован. Пожалуйста, войдите.') {
         return (
             <>
@@ -80,7 +103,7 @@ const QuestItemsList = ({
                 onRefresh={onRefreshProgress}
             />
             
-            <div className="quest-items-list">
+            <div className="quest-items-grid">
                 {items.map((item) => (
                     <QuestItemCard 
                         key={item.id} 

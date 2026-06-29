@@ -12,7 +12,6 @@ function App() {
     const { token, loading: authLoading, logout } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
     const [unauthorized, setUnauthorized] = useState(false);
-    const [isInitialized, setIsInitialized] = useState(false);
     
     const { 
         items, 
@@ -25,6 +24,7 @@ function App() {
         prevPage,
         goToPage,
         changeLimit,
+        itemsPerRow,
     } = useQuests();
 
     const { 
@@ -46,13 +46,6 @@ function App() {
         };
     }, [logout]);
 
-    // Ждем завершения проверки авторизации
-    useEffect(() => {
-        if (!authLoading) {
-            setIsInitialized(true);
-        }
-    }, [authLoading]);
-
     const handleProgressUpdate = async () => {
         try {
             await fetchProgress();
@@ -69,12 +62,10 @@ function App() {
         }
     };
 
-    // Показываем загрузку, пока проверяется авторизация
-    if (authLoading || !isInitialized) {
+    if (authLoading) {
         return <Loading message="Загрузка приложения..." />;
     }
 
-    // Если не авторизован или сессия истекла
     if (unauthorized || !token) {
         return (
             <div className="container auth-container">
@@ -92,8 +83,7 @@ function App() {
                             onSwitchToRegister={() => setIsLogin(false)} 
                             onSuccess={() => {
                                 setUnauthorized(false);
-                                // После входа загружаем данные
-                                fetchItems(1, 15);
+                                fetchItems(1, pagination.limit);
                                 fetchProgress();
                             }}
                         />
