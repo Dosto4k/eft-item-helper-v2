@@ -14,6 +14,7 @@ class Item(models.Model):
     class Meta:
         verbose_name = "Предмет"
         verbose_name_plural = "Предметы"
+        indexes = [models.Index(fields=["name"])]
 
     def __str__(self) -> str:
         return f"{self.name}"
@@ -47,6 +48,7 @@ class Quest(models.Model):
     class Meta:
         verbose_name = "Квест"
         verbose_name_plural = "Квесты"
+        indexes = [models.Index(fields=["name"])]
 
     def __str__(self) -> str:
         return f"{self.name}"
@@ -72,6 +74,17 @@ class UserItem(models.Model):
         verbose_name_plural = "Собранные предметы пользователей"
         constraints = [
             models.UniqueConstraint(fields=["user", "item"], name="unique_user_item")
+        ]
+        indexes = [
+            models.Index(
+                fields=["user"],
+            ),
+            models.Index(
+                fields=["item"],
+            ),
+            models.Index(
+                fields=["user", "item"],
+            ),
         ]
 
     def __str__(self) -> str:
