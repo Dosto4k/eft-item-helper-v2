@@ -5,26 +5,28 @@ import { useProgress } from './hooks/useProgress';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import QuestItemsList from './components/quests/QuestItemsList';
-import Loading from './components/common/Loading';
 import './index.css';
 
 function App() {
     const { token, loading: authLoading, logout } = useAuth();
     const [isLogin, setIsLogin] = useState(true);
     const [unauthorized, setUnauthorized] = useState(false);
-    const [isInitialized, setIsInitialized] = useState(false);
     
     const { 
         items, 
         loading, 
         error, 
         pagination,
+        searchQuery,
+        hideCompleted,
         fetchItems, 
         updateItem,
         nextPage,
         prevPage,
         goToPage,
         changeLimit,
+        handleSearch,
+        handleFilterChange,
     } = useQuests();
 
     const { 
@@ -46,13 +48,6 @@ function App() {
         };
     }, [logout]);
 
-    // Ждем завершения проверки авторизации
-    useEffect(() => {
-        if (!authLoading) {
-            setIsInitialized(true);
-        }
-    }, [authLoading]);
-
     const handleProgressUpdate = async () => {
         try {
             await fetchProgress();
@@ -61,20 +56,18 @@ function App() {
         }
     };
 
-    const handleUpdateItem = async (id, action, inRaid) => {
+    const handleUpdateItem = async (id, action, inRaid, updatedItem) => {
         try {
-            await updateItem(id, action, inRaid, handleProgressUpdate);
+            await updateItem(id, action, inRaid, handleProgressUpdate, updatedItem);
         } catch (error) {
             console.error('Ошибка обновления предмета:', error);
         }
     };
 
-    // Показываем загрузку, пока проверяется авторизация
-    if (authLoading || !isInitialized) {
-        return <Loading message="Загрузка приложения..." />;
+    if (authLoading) {
+        return <div className="loading">Загрузка приложения...</div>;
     }
 
-    // Если не авторизован или сессия истекла
     if (unauthorized || !token) {
         return (
             <div className="container auth-container">
@@ -92,7 +85,6 @@ function App() {
                             onSwitchToRegister={() => setIsLogin(false)} 
                             onSuccess={() => {
                                 setUnauthorized(false);
-                                // После входа загружаем данные
                                 fetchItems(1, 15);
                                 fetchProgress();
                             }}
@@ -133,6 +125,10 @@ function App() {
                 onPrev={prevPage}
                 onNext={nextPage}
                 onLimitChange={changeLimit}
+                onSearch={handleSearch}
+                onFilterChange={handleFilterChange}
+                searchQuery={searchQuery}
+                hideCompleted={hideCompleted}
             />
         </div>
     );

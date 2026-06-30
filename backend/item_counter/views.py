@@ -1,6 +1,6 @@
 from typing import Any
 
-from django.db.models import QuerySet
+from django.db.models import QuerySet, F
 from django.http import Http404
 from django.shortcuts import get_object_or_404
 from rest_framework import status
@@ -77,9 +77,16 @@ class QuestItemCountActionView(QueryParamsMixin, APIView):
         return delta
 
 
-class UserQuestItemsCountView(ListAPIView):
+class UserQuestItemsCountView(QueryParamsMixin, ListAPIView):
     serializer_class = CountQuestItemSerializer
     permission_classes = (IsAuthenticated,)
+    query_params = {
+        "limit": int,
+        "offset": int,
+        "item_name": str,
+        "hide_completed": bool,
+    }
+    required_query_params = ("limit", "offset")
 
     def get_queryset(self) -> QuerySet[UserItem]:
         return (
@@ -90,6 +97,27 @@ class UserQuestItemsCountView(ListAPIView):
             )
             .prefetch_related("item__quests")
         )
+
+    def filter_queryset(self, queryset: QuerySet[UserItem]) -> QuerySet[UserItem]:
+        query_params = self.get_query_params(self.request.query_params)
+
+        item_name = query_params.get("item_name")
+        if item_name is not None:
+            queryset = queryset.filter(item__name__icontains=item_name)
+
+        hide_completed = query_params.get("hide_completed", False)
+        if hide_completed:
+            queryset = queryset.exclude(
+                quest_in_raid=F("item__quest_details__in_raid"),
+                quest_out_raid=F("item__quest_details__out_raid"),
+            )
+        return queryset
+
+    def get_limit(self) -> int:
+        return self.get_query_params(self.request.query_params)["limit"]
+
+    def get_offset(self) -> int:
+        return self.get_query_params(self.request.query_params)["offset"]
 
 
 class UserQuestItemProgress(APIView):

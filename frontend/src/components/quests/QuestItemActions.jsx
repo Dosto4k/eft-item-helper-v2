@@ -9,7 +9,7 @@ const QuestItemActions = ({ item, onAction, disabled = false }) => {
     return (
         <div className="quest-item-actions">
             <div className="action-group">
-                <span className="action-label">Найдено в рейде</span>
+                <span className="action-label">В рейде</span>
                 <div className="action-buttons">
                     <button
                         onClick={() => onAction('increment', true)}
@@ -29,7 +29,7 @@ const QuestItemActions = ({ item, onAction, disabled = false }) => {
             </div>
 
             <div className="action-group">
-                <span className="action-label">Найдено не в рейде</span>
+                <span className="action-label">Не в рейде</span>
                 <div className="action-buttons">
                     <button
                         onClick={() => onAction('increment', false)}

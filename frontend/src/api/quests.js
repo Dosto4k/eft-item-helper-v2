@@ -7,6 +7,8 @@ export const questsApi = {
                 params: {
                     limit: params.limit || 15,
                     offset: params.offset || 0,
+                    item_name: params.item_name || undefined,
+                    hide_completed: params.hide_completed || undefined,
                 }
             });
             return response.data;
