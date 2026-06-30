@@ -9,12 +9,23 @@ body {
     background: #f0f2f5;
     color: #1a1a2e;
     min-height: 100vh;
+    overflow-y: scroll;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+#root > * {
+    width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Кнопки */
@@ -58,7 +69,7 @@ input:focus {
     box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.1);
 }
 
-/* Ошибки */
+/* Ошибки и загрузка */
 .error {
     color: #e74c3c;
     background: #fde8e8;
@@ -74,7 +85,6 @@ input:focus {
     color: #666;
 }
 
-/* Анимация загрузки */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -92,7 +102,7 @@ input:focus {
     margin-left: 12px;
 }
 
-/* Auth Container */
+/* Auth */
 .auth-container {
     max-width: 420px;
     margin: 60px auto 0;
@@ -184,130 +194,83 @@ input:focus {
     padding: 8px 16px;
 }
 
-/* Empty State */
-.empty-state {
-    text-align: center;
-    padding: 60px 20px;
+/* Filters */
+.filters-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
     background: white;
     border-radius: 12px;
+    margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    flex-wrap: wrap;
+    min-height: 76px;
 }
 
-.empty-icon {
-    font-size: 48px;
-    margin-bottom: 16px;
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
 }
 
-.empty-title {
-    font-size: 18px;
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s;
+    min-height: 44px;
+}
+
+.search-input:focus {
+    border-color: #4a90d9;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.1);
+}
+
+.search-clear {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.search-clear:hover {
     color: #333;
-    margin-bottom: 8px;
 }
 
-.empty-text {
-    color: #666;
-    font-size: 14px;
-}
-
-/* Pagination */
-.pagination-container {
-    margin-top: 24px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.pagination-info {
-    color: #666;
-    font-size: 14px;
-}
-
-.pagination-controls {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.pagination-limits {
+.filter-checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
-    color: #666;
-}
-
-.pagination-limit-select {
-    padding: 4px 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-    background: white;
     cursor: pointer;
-}
-
-.pagination-limit-select:focus {
-    border-color: #4a90d9;
-    outline: none;
-}
-
-.pagination-buttons {
-    display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
-}
-
-.pagination-btn {
-    padding: 6px 12px;
-    min-width: 36px;
-    background: white;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     font-size: 14px;
-    transition: all 0.2s;
+    color: #555;
+    white-space: nowrap;
+    user-select: none;
+    min-height: 44px;
 }
 
-.pagination-btn:hover:not(:disabled) {
-    background: #4a90d9;
-    color: white;
-    border-color: #4a90d9;
+.filter-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4a90d9;
 }
 
-.pagination-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+.filter-checkbox span {
+    font-weight: 500;
 }
 
-.pagination-btn.active {
-    background: #4a90d9;
-    color: white;
-    border-color: #4a90d9;
-}
-
-@media (max-width: 768px) {
-    .pagination-container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-    }
-    
-    .pagination-controls {
-        justify-content: center;
-    }
-    
-    .pagination-buttons {
-        justify-content: center;
-    }
-}
-
-/* Progress Container */
+/* Progress */
 .progress-container {
     background: white;
     border-radius: 12px;
@@ -335,7 +298,6 @@ input:focus {
     min-height: 24px;
 }
 
-/* Progress Bar */
 .progress-bar-wrapper {
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -382,7 +344,6 @@ input:focus {
     transition: width 0.5s ease;
 }
 
-/* Dual Progress */
 .progress-dual {
     display: flex;
     flex-direction: column;
@@ -448,7 +409,6 @@ input:focus {
     background: #8e24aa;
 }
 
-/* Progress Cards */
 .progress-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -513,7 +473,6 @@ input:focus {
     min-height: 16px;
 }
 
-/* Card Colors */
 .progress-card-completed {
     background: #e8f5e9;
 }
@@ -542,7 +501,6 @@ input:focus {
     color: #1565c0;
 }
 
-/* Progress Total */
 .progress-total {
     text-align: center;
     padding-top: 16px;
@@ -567,7 +525,6 @@ input:focus {
     transition: color 0.3s ease;
 }
 
-/* Progress Numbers */
 .progress-number {
     display: inline-block;
     min-width: 20px;
@@ -598,61 +555,41 @@ input:focus {
     font-size: 14px;
 }
 
-/* Responsive Progress */
-@media (max-width: 768px) {
-    .progress-container {
-        padding: 16px;
-        min-height: 240px;
-    }
-    
-    .progress-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        min-height: 120px;
-    }
-    
-    .progress-card {
-        padding: 12px 14px;
-        min-height: 56px;
-    }
-    
-    .progress-card-value {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 480px) {
-    .progress-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-    }
-    
-    .progress-card {
-        padding: 10px 12px;
-        flex-direction: column;
-        text-align: center;
-        gap: 4px;
-        min-height: 70px;
-    }
-    
-    .progress-card-icon {
-        font-size: 20px;
-    }
-    
-    .progress-card-value {
-        font-size: 16px;
-    }
-}
-
-/* Сетка карточек - всегда 3 колонки */
+/* Сетка карточек */
 .quest-items-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     margin-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: start;
 }
 
-/* Карточка - всё по центру */
+.quest-items-grid.has-1 .quest-item-card {
+    grid-column: 1 / 2;
+    max-width: 100%;
+    justify-self: start;
+}
+
+.quest-items-grid.has-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.quest-items-grid.has-2 .quest-item-card {
+    max-width: 100%;
+    width: 100%;
+}
+
+.quest-items-grid.has-2 .quest-item-card:first-child {
+    grid-column: 1 / 2;
+}
+
+.quest-items-grid.has-2 .quest-item-card:last-child {
+    grid-column: 2 / 3;
+}
+
+/* Карточка */
 .quest-item-card {
     background: white;
     border-radius: 12px;
@@ -663,10 +600,12 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    min-height: 200px;
+    height: 260px;
+    max-height: 260px;
     position: relative;
     overflow: visible;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .quest-item-card.completed {
@@ -687,7 +626,6 @@ input:focus {
     gap: 6px;
 }
 
-/* Название - по центру */
 .quest-item-header {
     display: flex;
     justify-content: center;
@@ -703,7 +641,6 @@ input:focus {
     text-align: center;
 }
 
-/* Блок прогресс-баров - прижат к меню квестов */
 .quest-item-progress-block {
     display: flex;
     flex-direction: column;
@@ -714,7 +651,6 @@ input:focus {
     padding-bottom: 0;
 }
 
-/* Прогресс-бар */
 .quest-item-progress-item {
     display: flex;
     flex-direction: column;
@@ -741,7 +677,6 @@ input:focus {
     font-weight: 500;
 }
 
-/* Центрированный прогресс-бар с кнопками */
 .quest-item-progress-wrapper {
     display: flex;
     align-items: center;
@@ -750,7 +685,6 @@ input:focus {
     width: 100%;
 }
 
-/* Кнопки + и - */
 .progress-btn {
     width: 28px;
     height: 28px;
@@ -792,7 +726,6 @@ input:focus {
     transform: none !important;
 }
 
-/* Прогресс-бар */
 .quest-item-progress-bar {
     flex: 1;
     height: 8px;
@@ -816,7 +749,6 @@ input:focus {
     background: #8e24aa;
 }
 
-/* Кнопка показа квестов - прижата к низу с отступом от прогресс-баров */
 .quest-item-quests-toggle {
     position: relative;
     width: 100%;
@@ -866,7 +798,6 @@ input:focus {
     color: #1a73e8;
 }
 
-/* Выпадающий список квестов - поверх карточки */
 .quests-dropdown {
     position: absolute;
     bottom: 100%;
@@ -896,7 +827,6 @@ input:focus {
     }
 }
 
-/* Стилизация скроллбара */
 .quests-dropdown::-webkit-scrollbar {
     width: 4px;
 }
@@ -952,13 +882,133 @@ input:focus {
     opacity: 1;
 }
 
-/* Чтобы карточка не обрезала выпадающее меню */
-.quest-items-grid {
+.quest-items-grid,
+.quest-item-card {
     overflow: visible;
 }
 
-.quest-item-card {
-    overflow: visible;
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.empty-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.empty-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Pagination */
+.pagination-container {
+    margin-top: 24px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    min-height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pagination-container.single-page .pagination-controls {
+    justify-content: flex-end;
+}
+
+.pagination-info {
+    color: #666;
+    font-size: 14px;
+    flex: 0 1 auto;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+}
+
+.pagination-limits {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.pagination-limit-select {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    min-height: 32px;
+}
+
+.pagination-limit-select:focus {
+    border-color: #4a90d9;
+    outline: none;
+}
+
+.pagination-buttons {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    padding: 6px 12px;
+    min-width: 36px;
+    min-height: 36px;
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: #4a90d9;
+    color: white;
+    border-color: #4a90d9;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-btn.active {
+    background: #4a90d9;
+    color: white;
+    border-color: #4a90d9;
 }
 
 /* Адаптивность */
@@ -967,37 +1017,103 @@ input:focus {
         grid-template-columns: repeat(2, 1fr);
         gap: 14px;
     }
+
+    .quest-items-grid.has-1 .quest-item-card {
+        grid-column: 1 / 2;
+        max-width: 100%;
+        justify-self: start;
+    }
+
+    .quest-items-grid.has-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quest-items-grid.has-2 .quest-item-card:first-child {
+        grid-column: 1 / 2;
+    }
+
+    .quest-items-grid.has-2 .quest-item-card:last-child {
+        grid-column: 2 / 3;
+    }
+
+    .quest-item-card {
+        height: 240px;
+        max-height: 240px;
+    }
 }
 
 @media (max-width: 768px) {
+    .pagination-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        min-height: auto;
+    }
+
+    .pagination-container.single-page {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pagination-container.single-page .pagination-controls {
+        justify-content: center;
+    }
+
+    .pagination-controls {
+        justify-content: center;
+    }
+
+    .pagination-buttons {
+        justify-content: center;
+    }
+
     .quest-items-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
-    
-    .quest-item-card {
-        padding: 12px;
-        min-height: 180px;
+
+    .quest-items-grid.has-1 .quest-item-card {
+        grid-column: 1 / 2;
+        max-width: 100%;
+        justify-self: start;
     }
-    
+
+    .quest-items-grid.has-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quest-items-grid.has-2 .quest-item-card:first-child {
+        grid-column: 1 / 2;
+    }
+
+    .quest-items-grid.has-2 .quest-item-card:last-child {
+        grid-column: 2 / 3;
+    }
+
+    .quest-item-card {
+        height: 220px;
+        max-height: 220px;
+        padding: 12px;
+    }
+
     .quest-item-name {
         font-size: 14px;
     }
-    
+
     .quest-item-progress-label {
         font-size: 11px;
     }
-    
+
     .quest-item-progress-count {
         font-size: 11px;
     }
-    
+
     .progress-btn {
         width: 24px;
         height: 24px;
         font-size: 14px;
     }
-    
+
     .quests-dropdown {
         max-height: 140px;
     }
@@ -1008,39 +1124,134 @@ input:focus {
         grid-template-columns: 1fr;
         gap: 12px;
     }
+
+    .quest-items-grid.has-1 .quest-item-card {
+        grid-column: 1 / 2;
+        max-width: 100%;
+        justify-self: start;
+    }
+
+    .quest-items-grid.has-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .quest-items-grid.has-2 .quest-item-card:first-child {
+        grid-column: 1 / 2;
+    }
+
+    .quest-items-grid.has-2 .quest-item-card:last-child {
+        grid-column: 1 / 2;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 12px 16px;
+        min-height: auto;
+    }
+
+    .search-wrapper {
+        min-width: unset;
+    }
+
+    .filter-checkbox {
+        justify-content: center;
+        min-height: auto;
+    }
+
+    .empty-state {
+        min-height: 200px;
+        padding: 40px 20px;
+    }
+
+    .quest-item-card {
+        height: 200px;
+        max-height: 200px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
     .quest-item-card {
+        height: 180px;
+        max-height: 180px;
         padding: 10px;
-        min-height: 160px;
     }
-    
+
     .quest-item-name {
         font-size: 13px;
     }
-    
+
     .quest-item-progress-label {
         font-size: 10px;
     }
-    
+
     .quest-item-progress-count {
         font-size: 10px;
     }
-    
+
     .progress-btn {
         width: 22px;
         height: 22px;
         font-size: 12px;
     }
-    
+
     .quests-toggle-btn {
         font-size: 11px;
         padding: 6px 10px;
     }
-    
+
     .quest-dropdown-item {
         font-size: 11px;
         padding: 6px 10px;
     }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f2f5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c7cd;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0a7ae;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c1c7cd #f0f2f5;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* Принудительно прижимаем к верху */
+#root {
+    display: block !important;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#root > * {
+    width: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.container {
+    margin-top: 0 !important;
+    padding-top: 20px;
 }

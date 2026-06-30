@@ -13,6 +13,34 @@ const Pagination = ({
     onLimitChange,
     limits = [9, 12, 15, 18, 21, 24, 30, 36, 42, 48, 54, 60]
 }) => {
+    // Если всего 1 страница или меньше, показываем только информацию о количестве
+    if (totalPages <= 1) {
+        return (
+            <div className="pagination-container single-page">
+                <div className="pagination-info">
+                    <span>
+                        Показано {Math.min((currentPage - 1) * currentLimit + 1, totalItems)} - 
+                        {' '}{Math.min(currentPage * currentLimit, totalItems)} из {totalItems} предметов
+                    </span>
+                </div>
+                <div className="pagination-controls">
+                    <div className="pagination-limits">
+                        <label>На странице:</label>
+                        <select 
+                            value={currentLimit} 
+                            onChange={(e) => onLimitChange(Number(e.target.value))}
+                            className="pagination-limit-select"
+                        >
+                            {limits.map(limit => (
+                                <option key={limit} value={limit}>{limit}</option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     const getPageNumbers = () => {
         const pages = [];
         const maxVisible = 5;

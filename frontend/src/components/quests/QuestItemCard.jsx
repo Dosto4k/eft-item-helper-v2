@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import QuestItemActions from './QuestItemActions';
 
 const QuestItemCard = ({ item, onAction }) => {
     const [localItem, setLocalItem] = useState(item);
@@ -26,13 +27,14 @@ const QuestItemCard = ({ item, onAction }) => {
         if (inRaid && newValue > localItem.required_in_raid) return;
         if (!inRaid && newValue > localItem.required_out_raid) return;
         
-        setLocalItem(prev => ({
-            ...prev,
+        const updatedItem = {
+            ...localItem,
             [field]: newValue
-        }));
+        };
+        setLocalItem(updatedItem);
         
         try {
-            await onAction(localItem.id, action, inRaid);
+            await onAction(localItem.id, action, inRaid, updatedItem);
         } catch (error) {
             setLocalItem(prev => ({
                 ...prev,
@@ -60,14 +62,11 @@ const QuestItemCard = ({ item, onAction }) => {
     return (
         <div className={`quest-item-card ${isComplete ? 'completed' : ''}`}>
             <div className="quest-item-content">
-                {/* Название предмета */}
                 <div className="quest-item-header">
                     <h3 className="quest-item-name">{localItem.name}</h3>
                 </div>
 
-                {/* Блок с прогресс-барами */}
                 <div className="quest-item-progress-block">
-                    {/* Бар для "В рейде" */}
                     <div className="quest-item-progress-item">
                         <div className="quest-item-progress-header">
                             <span className="quest-item-progress-label">В рейде</span>
@@ -99,7 +98,6 @@ const QuestItemCard = ({ item, onAction }) => {
                         </div>
                     </div>
 
-                    {/* Бар для "Не в рейде" */}
                     <div className="quest-item-progress-item">
                         <div className="quest-item-progress-header">
                             <span className="quest-item-progress-label">Не в рейде</span>
@@ -132,7 +130,6 @@ const QuestItemCard = ({ item, onAction }) => {
                     </div>
                 </div>
 
-                {/* Выпадающий список квестов */}
                 {localItem.quests && localItem.quests.length > 0 && (
                     <div className="quest-item-quests-toggle">
                         <button 

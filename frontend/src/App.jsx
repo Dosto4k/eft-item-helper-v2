@@ -5,7 +5,6 @@ import { useProgress } from './hooks/useProgress';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import QuestItemsList from './components/quests/QuestItemsList';
-import Loading from './components/common/Loading';
 import './index.css';
 
 function App() {
@@ -18,13 +17,16 @@ function App() {
         loading, 
         error, 
         pagination,
+        searchQuery,
+        hideCompleted,
         fetchItems, 
         updateItem,
         nextPage,
         prevPage,
         goToPage,
         changeLimit,
-        itemsPerRow,
+        handleSearch,
+        handleFilterChange,
     } = useQuests();
 
     const { 
@@ -54,16 +56,16 @@ function App() {
         }
     };
 
-    const handleUpdateItem = async (id, action, inRaid) => {
+    const handleUpdateItem = async (id, action, inRaid, updatedItem) => {
         try {
-            await updateItem(id, action, inRaid, handleProgressUpdate);
+            await updateItem(id, action, inRaid, handleProgressUpdate, updatedItem);
         } catch (error) {
             console.error('Ошибка обновления предмета:', error);
         }
     };
 
     if (authLoading) {
-        return <Loading message="Загрузка приложения..." />;
+        return <div className="loading">Загрузка приложения...</div>;
     }
 
     if (unauthorized || !token) {
@@ -83,7 +85,7 @@ function App() {
                             onSwitchToRegister={() => setIsLogin(false)} 
                             onSuccess={() => {
                                 setUnauthorized(false);
-                                fetchItems(1, pagination.limit);
+                                fetchItems(1, 15);
                                 fetchProgress();
                             }}
                         />
@@ -123,6 +125,10 @@ function App() {
                 onPrev={prevPage}
                 onNext={nextPage}
                 onLimitChange={changeLimit}
+                onSearch={handleSearch}
+                onFilterChange={handleFilterChange}
+                searchQuery={searchQuery}
+                hideCompleted={hideCompleted}
             />
         </div>
     );
